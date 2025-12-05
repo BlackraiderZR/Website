@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Maosan - Artikel & Informasi Makanan Tradisional Solo">
+    <meta name="keywords" content="artikel solo, budaya jawa, sejarah makanan, resep tradisional, kuliner solo">
+    <meta name="author" content="ALWANU ZAKY RAIHAN">
+    
+    <title>Maosan - Makanan Wong Solo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/articles.css">
+</head>
+<body>
+    <!-- Batik Background Pattern -->
+    <div class="batik-pattern"></div>
+    
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- WhatsApp Bubble -->
+    <div class="wa-bubble">
+        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+           target="_blank" 
+           class="wa-link"
+           aria-label="Hubungi via WhatsApp">
+            <div class="wa-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="wa-tooltip">
+                Tanya via WhatsApp
+            </div>
+        </a>
+    </div>
+    
+    <!-- Header -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper">
+            <!-- Logo -->
+            <div class="logo-section">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Makanan</span>
+                        <span class="logo-subtitle">Wong Solo</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="nav-link active">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Cart Counter -->
+            <div class="cart-counter" id="cartCounter">
+                <a href="pesanan.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Makanan Wong Solo</span>
+                </div>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="mobile-nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="mobile-nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="mobile-nav-link active">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="mobile-nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Articles Hero -->
+        <section class="articles-hero-section section-padding">
+            <div class="container">
+                <div class="articles-hero-content">
+                    <div class="hero-breadcrumb">
+                        <a href="index.html">Beranda</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Maosan</span>
+                    </div>
+                    <h1 class="articles-hero-title">
+                        <span class="text-primary">Maosan</span><br>
+                        <span class="text-gold">Cerita & Inspirasi</span><br>
+                        <span class="text-dark">dari Dapur Solo</span>
+                    </h1>
+                    <p class="articles-hero-description">
+                        Jelajahi kekayaan budaya kuliner Solo melalui cerita-cerita menarik, sejarah, 
+                        dan filosofi dibalik setiap hidangan tradisional.
+                    </p>
+                    
+                    <!-- Categories Filter -->
+                    <div class="articles-categories">
+                        <button class="category-filter active" data-category="all">
+                            <i class="fas fa-th-large"></i>
+                            Semua Artikel
+                        </button>
+                        <button class="category-filter" data-category="sejarah">
+                            <i class="fas fa-landmark"></i>
+                            Sejarah
+                        </button>
+                        <button class="category-filter" data-category="budaya">
+                            <i class="fas fa-masks-theater"></i>
+                            Budaya
+                        </button>
+                        <button class="category-filter" data-category="resep">
+                            <i class="fas fa-book-open"></i>
+                            Resep & Tips
+                        </button>
+                        <button class="category-filter" data-category="wisata">
+                            <i class="fas fa-utensils"></i>
+                            Wisata Kuliner
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Article -->
+        <section class="featured-article-section section-padding bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Artikel Pilihan</h2>
+                    <p class="section-subtitle">Rekomendasi terbaik untuk Anda baca hari ini</p>
+                </div>
+                
+                <article class="featured-article-card" id="featuredArticle">
+                    <!-- Featured article will be loaded via JavaScript -->
+                </article>
+            </div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="articles-grid-section section-padding">
+            <div class="container">
+                <div class="articles-header">
+                    <div class="articles-title-section">
+                        <h2 class="section-title">Semua Artikel</h2>
+                        <p class="section-subtitle">Temukan artikel menarik lainnya</p>
+                    </div>
+                    <div class="articles-search">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="articleSearch" placeholder="Cari artikel...">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Articles Container -->
+                <div class="articles-container" id="articlesContainer">
+                    <!-- Articles will be loaded via JavaScript -->
+                </div>
+                
+                <!-- Load More Button -->
+                <div class="load-more-container" id="loadMoreContainer">
+                    <button class="btn btn-outline" id="loadMoreBtn">
+                        <i class="fas fa-plus"></i>
+                        Muat Lebih Banyak
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter-section bg-dark section-padding">
+            <div class="container">
+                <div class="newsletter-content">
+                    <div class="newsletter-icon">
+                        <i class="fas fa-envelope-open-text"></i>
+                    </div>
+                    <h2 class="newsletter-title">Tetap Terhubung</h2>
+                    <p class="newsletter-description">
+                        Dapatkan artikel terbaru tentang kuliner Solo langsung di email Anda. 
+                        Gratis dan tanpa spam!
+                    </p>
+                    <form class="newsletter-form" id="newsletterForm">
+                        <div class="form-group">
+                            <input type="email" id="newsletterEmail" placeholder="Masukkan email Anda" required>
+                            <button type="submit" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i>
+                                Berlangganan
+                            </button>
+                        </div>
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="newsletterAgree" required>
+                            <label for="newsletterAgree">
+                                Saya setuju menerima artikel dan promosi dari Makanan Wong Solo
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Article Modal -->
+        <div class="article-modal" id="articleModal">
+            <div class="modal-overlay" id="articleOverlay"></div>
+            <div class="modal-content">
+                <button class="modal-close" id="articleClose">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="modal-body" id="articleModalBody">
+                    <!-- Article content will be loaded here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer-section bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Makanan</span>
+                            <span class="logo-subtitle">Wong Solo</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Melestarikan cita rasa autentik makanan tradisional Surakarta sejak 1995. 
+                        Warisan kuliner keluarga Keraton Surakarta.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+                           target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/makananwongsolo" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:makananwongsolo@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Kontak Kami</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>WhatsApp: +62 895-1343-9235</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram: @makananwongsolo</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: makananwongsolo@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-address">
+                    <h3 class="footer-title">Alamat</h3>
+                    <div class="address-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Yos Sudarso, Gawanan,<br>
+                           Kec. Colomadu,<br>
+                           Kab. Karanganyar,<br>
+                           Jawa Tengah 57175</p>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h3 class="footer-title">Jam Buka</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span>Senin - Kamis</span>
+                            <span>08:00 - 16:00 WIB</span>
+                        </li>
+                        <li>
+                            <span>Jum'at - Minggu/Hari Libur</span>
+                            <span>10:00 - 16:00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Makanan Wong Solo. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="produk.html">Produk</a>
+                    <a href="pesanan.html">Pesanan</a>
+                    <a href="maosan.html">Maosan</a>
+                    <a href="testimoni.html">Testimoni</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Files -->
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/articles.js"></script>
+    
+ <!-- GANTI ARTICLES DATA di bagian script dengan ini: -->
+
+<script>
+    // Articles data - DIPERBAHARUI dengan lebih banyak variasi
+    const articlesData = [
+        // ARTIKEL SEJARAH
+        {
+            id: "sejarah-nasi-liwet",
+            title: "Asal Usul Nasi Liwet: Dari Rakyat Biasa ke Meja Keraton",
+            excerpt: "Nasi Liwet bukan sekadar makanan biasa, melainkan memiliki nilai sejarah yang dalam dalam budaya Jawa. Awalnya hidangan rakyat biasa, kini menjadi ikon kuliner Keraton Surakarta.",
+            content: `...` // content sama seperti sebelumnya
+        },
+        {
+            id: "selat-solo-fusion",
+            title: "Selat Solo: Perpaduan Sempurna Kuliner Jawa dan Eropa",
+            excerpt: "Bagaimana hidangan steak Eropa diadaptasi menjadi Selat Solo dengan sentuhan Jawa yang unik dan elegan.",
+            content: `...` // content sama seperti sebelumnya
+        },
+        {
+            id: "timlo-solo-heritage",
+            title: "Timlo Solo: Sup Penyembuh dari Masa Lalu",
+            excerpt: "Timlo awalnya dibuat sebagai makanan penyembuh bagi keluarga keraton. Kini menjadi sup tradisional yang digemari semua kalangan.",
+            content: `
+                <article class="article-full">
+                    <header class="article-header">
+                        <div class="article-category">
+                            <span class="category-badge sejarah">Sejarah</span>
+                        </div>
+                        <h1 class="article-title">Timlo Solo: Sup Penyembuh dari Masa Lalu</h1>
+                        <div class="article-meta">
+                            <div class="meta-author">
+                                <i class="fas fa-user"></i>
+                                <span>ALWANU ZAKY RAIHAN</span>
+                            </div>
+                            <div class="meta-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>28 Februari 2024</span>
+                            </div>
+                            <div class="meta-read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>4 min read</span>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div class="article-hero">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Timlo Solo" loading="lazy">
+                    </div>
+                    
+                    <div class="article-content">
+                        <p class="lead">Timlo Solo bukan sekadar sup biasa. Hidangan ini memiliki sejarah panjang sebagai makanan penyembuh dalam tradisi pengobatan Jawa kuno.</p>
+                        
+                        <h2>Asal Mula sebagai Ramuan Kesehatan</h2>
+                        <p>Pada abad ke-18, Timlo diciptakan oleh tabib Keraton Surakarta sebagai makanan untuk membantu pemulihan pasien. Nama "Timlo" sendiri berasal dari kata "timplo" yang berarti "ramuan" dalam bahasa Jawa Kuno.</p>
+                        
+                        <div class="article-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Setiap bahan dalam Timlo dipilih dengan teliti karena khasiat penyembuhannya dalam pengobatan tradisional Jawa.</p>
+                        </div>
+                        
+                        <h2>Bahan-Bahan dengan Khasiat Khusus</h2>
+                        <p>Komposisi Timlo tidak sembarangan:</p>
+                        
+                        <ul>
+                            <li><strong>Kaldu ayam kampung:</strong> Mengandung protein tinggi untuk pemulihan</li>
+                            <li><strong>Ati ampela:</strong> Sumber zat besi dan vitamin B</li>
+                            <li><strong>Soun:</strong> Mudah dicerna untuk pasien lemah</li>
+                            <li><strong>Wortel dan buncis:</strong> Vitamin dan serat</li>
+                            <li><strong>Rempah-rempah:</strong> Jahe, kunyit, lada - anti inflamasi alami</li>
+                        </ul>
+                        
+                        <h2>Evolusi dari Makanan Medis ke Makanan Populer</h2>
+                        <p>Seiring waktu, Timlo berubah dari makanan khusus pasien menjadi hidangan populer:</p>
+                        
+                        <ol>
+                            <li><strong>Era Keraton:</strong> Hanya untuk keluarga keraton dan pasien</li>
+                            <li><strong>Era Kolonial:</strong> Mulai dikenal masyarakat luas</li>
+                            <li><strong>Era Modern:</strong> Menjadi street food favorit</li>
+                            <li><strong>Era Sekarang:</strong> Diproduksi secara komersial dengan standar tinggi</li>
+                        </ol>
+                        
+                        <div class="article-cta">
+                            <h3>Rasakan Timlo Autentik</h3>
+                            <p>Cicipi Timlo Solo dengan resep asli yang telah diwariskan selama berabad-abad.</p>
+                            <a href="produk.html#timlo-solo" class="btn btn-primary">
+                                <i class="fas fa-utensils"></i>
+                                Pesan Timlo Solo
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `,
+            category: "sejarah",
+            date: "2024-02-28",
+            readTime: "4 min",
+            image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            author: "ALWANU ZAKY RAIHAN",
+            featured: false,
+            tags: ["Timlo Solo", "Sejarah", "Makanan Sehat"]
+        },
+        
+        // ARTIKEL BUDAYA
+        {
+            id: "filosofi-makanan-jawa",
+            title: "Filosofi Makanan dalam Budaya Jawa: Lebih dari Sekadar Rasa",
+            excerpt: "Setiap hidangan tradisional Solo memiliki filosofi dan makna mendalam dalam kehidupan masyarakat Jawa.",
+            content: `...` // content sama seperti sebelumnya
+        },
+        {
+            id: "makna-batik-makanan",
+            title: "Batik dan Makanan: Dua Warisan Budaya Solo yang Tak Terpisahkan",
+            excerpt: "Temukan hubungan mendalam antara motif batik Solo dengan filosofi makanan tradisionalnya.",
+            content: `...` // content sama seperti sebelumnya
+        },
+        {
+            id: "upacara-adat-solo",
+            title: "Makanan dalam Upacara Adat Keraton Surakarta",
+            excerpt: "Setiap upacara adat di Keraton Surakarta memiliki makanan khusus dengan makna dan fungsi tersendiri.",
+            content: `
+                <article class="article-full">
+                    <header class="article-header">
+                        <div class="article-category">
+                            <span class="category-badge budaya">Budaya</span>
+                        </div>
+                        <h1 class="article-title">Makanan dalam Upacara Adat Keraton Surakarta</h1>
+                        <div class="article-meta">
+                            <div class="meta-author">
+                                <i class="fas fa-user"></i>
+                                <span>ALWANU ZAKY RAIHAN</span>
+                            </div>
+                            <div class="meta-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>18 Februari 2024</span>
+                            </div>
+                            <div class="meta-read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>6 min read</span>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div class="article-hero">
+                        <img src="https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Upacara Adat Keraton" loading="lazy">
+                    </div>
+                    
+                    <div class="article-content">
+                        <p class="lead">Keraton Surakarta memiliki berbagai upacara adat yang sarat dengan makna filosofis, dan makanan memainkan peran penting dalam setiap ritual.</p>
+                        
+                        <h2>Upacara Tingkeban (7 Bulanan)</h2>
+                        <p>Upacara untuk ibu hamil usia 7 bulan memiliki makanan khusus:</p>
+                        
+                        <ul>
+                            <li><strong>Rujak untuk calon bayi perempuan:</strong> Melambangkan kecantikan dan kesegaran</li>
+                            <li><strong>Bubur merah putih:</strong> Simbol keseimbangan hidup</li>
+                            <li><strong>Tumpeng mini:</strong> Doa untuk keselamatan</li>
+                            <li><strong>Kue apem:</strong> Permohonan ampun dan keselamatan</li>
+                        </ul>
+                        
+                        <div class="article-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Dalam budaya Jawa, makanan bukan sekadar pengisi perut, tetapi media komunikasi dengan alam dan Sang Pencipta.</p>
+                        </div>
+                        
+                        <h2>Upacara Pernikahan Adat</h2>
+                        <p>Pernikahan keraton memiliki rangkaian makanan khusus:</p>
+                        
+                        <div class="article-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Makanan</th>
+                                        <th>Makna</th>
+                                        <th>Waktu Penyajian</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dawet Ayu</td>
+                                        <td>Kehidupan manis dan awet muda</td>
+                                        <td>Saat lamaran</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kue Mangkok</td>
+                                        <td>Kesempurnaan pernikahan</td>
+                                        <td>Resepsi</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nasi Bogana</td>
+                                        <td>Kemakmuran rumah tangga</td>
+                                        <td>Makan malam</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jenang Abang Putih</td>
+                                        <td>Keseimbangan suami istri</td>
+                                        <td>Acara inti</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h2>Upacara Kematian (Slametan)</h2>
+                        <p>Makanan untuk mendoakan arwah:</p>
+                        
+                        <ol>
+                            <li><strong>Bancakan:</strong> Nasi dengan lauk sederhana</li>
+                            <li><strong>Kolang-kaling:</strong> Simbol kesucian</li>
+                            <li><strong>Apem:</strong> Permohonan ampunan</li>
+                            <li><strong>Kedelai hitam:</strong> Kekuatan spiritual</li>
+                        </ol>
+                        
+                        <h2>Upacara Selamatan Desa</h2>
+                        <p>Tradisi tahunan untuk keselamatan desa:</p>
+                        
+                        <ul>
+                            <li><strong>Tumpeng Agung:</strong> Nasi kerucut besar sebagai pusat</li>
+                            <li><strong>Jajan Pasar lengkap:</strong> Semua jenis kue tradisional</li>
+                            <li><strong>Ingkung Ayam:</strong> Ayam utuh sebagai simbol pengorbanan</li>
+                            <li><strong>Buah-buahan lokal:</strong> Hasil bumi yang disyukuri</li>
+                        </ul>
+                        
+                        <div class="article-cta">
+                            <h3>Pelajari Budaya Melalui Makanan</h3>
+                            <p>Setiap hidangan di Makanan Wong Solo dibuat dengan pemahaman mendalam tentang budaya dan tradisi Jawa.</p>
+                            <a href="contact.html" class="btn btn-primary">
+                                <i class="fas fa-graduation-cap"></i>
+                                Konsultasi Budaya
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `,
+            category: "budaya",
+            date: "2024-02-18",
+            readTime: "6 min",
+            image: "https://images.unsplash.com/photo-1532634922-8fe0b757fb13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            author: "ALWANU ZAKY RAIHAN",
+            featured: false,
+            tags: ["Upacara Adat", "Keraton Solo", "Tradisi Jawa"]
+        },
+        
+        // ARTIKEL RESEP & TIPS
+        {
+            id: "rahasia-rempah-serabi",
+            title: "Rahasia Rempah Serabi Solo: Warisan Rasa yang Tak Tertandingi",
+            excerpt: "Temukan rahasia rempah-rempah khas yang membuat Serabi Solo memiliki cita rasa yang unik.",
+            content: `...` // content sama seperti sebelumnya
+        },
+        {
+            id: "teknik-memasak-tradisional",
+            title: "Teknik Memasak Tradisional Jawa yang Masih Bertahan",
+            excerpt: "Pelajari teknik memasak tradisional Jawa yang masih digunakan hingga kini.",
+            content: `...` // content sama seperti sebelumnya
+        },
+        {
+            id: "jajanan-tradisional-solo",
+            title: "Jajanan Tradisional Solo: Dari Pasar ke Meja Modern",
+            excerpt: "Eksplorasi jajanan tradisional Solo yang tetap populer dari generasi ke generasi.",
+            content: `
+                <article class="article-full">
+                    <header class="article-header">
+                        <div class="article-category">
+                            <span class="category-badge resep">Resep & Tips</span>
+                        </div>
+                        <h1 class="article-title">Jajanan Tradisional Solo: Dari Pasar ke Meja Modern</h1>
+                        <div class="article-meta">
+                            <div class="meta-author">
+                                <i class="fas fa-user"></i>
+                                <span>ALWANU ZAKY RAIHAN</span>
+                            </div>
+                            <div class="meta-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>12 Februari 2024</span>
+                            </div>
+                            <div class="meta-read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div class="article-hero">
+                        <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Jajanan Tradisional Solo" loading="lazy">
+                    </div>
+                    
+                    <div class="article-content">
+                        <p class="lead">Solo memiliki kekayaan jajanan tradisional yang tidak hanya lezat tetapi juga kaya akan cerita dan tradisi.</p>
+                        
+                        <h2>Jajanan Pasar Khas Solo</h2>
+                        <p>Beberapa jajanan pasar yang wajib dicoba:</p>
+                        
+                        <div class="article-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Jajanan</th>
+                                        <th>Bahan Utama</th>
+                                        <th>Sejarah Singkat</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Brambang Asem</td>
+                                        <td>Singkong, bawang merah, asam jawa</td>
+                                        <td>Makanan petani yang menjadi favorit semua kalangan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jatah Blondo</td>
+                                        <td>Kacang tanah, kelapa, gula aren</td>
+                                        <td>Awali sebagai camilan pendamping minum teh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cambuk Rambak</td>
+                                        <td>Kerupuk kulit, sambal kacang, lontong</td>
+                                        <td>Terinspirasi dari bunyi "cambuk" saat mengunyah</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Ampo</td>
+                                        <td>Tanah liat khusus</td>
+                                        <td>Makanan unik yang telah ada sejak ratusan tahun</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h2>Tips Menikmati Jajanan Tradisional</h2>
+                        
+                        <div class="article-tips">
+                            <h3><i class="fas fa-lightbulb"></i> Tips dari Nenek Moyang:</h3>
+                            <ul>
+                                <li><strong>Ampo:</strong> Pilih yang bertekstur halus dan tidak berpasir</li>
+                                <li><strong>Brambang Asem:</strong> Nikmati saat masih hangat dan renyah</li>
+                                <li><strong>Jatah Blondo:</strong> Simpan dalam wadah kedap udara</li>
+                                <li><strong>Semua jajanan:</strong> Lebih baik dibuat hari itu juga</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>Modernisasi dengan Tetap Autentik</h2>
+                        <p>Di Makanan Wong Solo, kami menjaga keaslian dengan sentuhan modern:</p>
+                        
+                        <ul>
+                            <li><strong>Kualitas bahan:</strong> Menggunakan bahan terbaik</li>
+                            <li><strong>Higienis:</strong> Proses produksi yang bersih</li>
+                            <li><strong>Kemasan:</strong> Praktis namun tetap tradisional</li>
+                            <li><strong>Rasa:</strong> Tetap mempertahankan resep asli</li>
+                        </ul>
+                        
+                        <div class="article-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Jajanan tradisional adalah jendela untuk memahami kehidupan masyarakat Solo di masa lalu.</p>
+                        </div>
+                        
+                        <h2>Membuat Sendiri di Rumah</h2>
+                        <p>Untuk Brambang Asem sederhana:</p>
+                        
+                        <ol>
+                            <li>Kupas dan potong singkong tipis-tipis</li>
+                            <li>Goreng hingga renyah</li>
+                            <li>Buat bumbu dari bawang merah, asam jawa, gula, garam</li>
+                            <li>Campur singkong dengan bumbu selagi panas</li>
+                            <li>Sajikan dengan cabai rawit jika suka pedas</li>
+                        </ol>
+                        
+                        <div class="article-cta">
+                            <h3>Ingin Mencoba Jajanan Autentik?</h3>
+                            <p>Kami menyediakan jajanan tradisional Solo dengan kualitas terbaik dan rasa autentik.</p>
+                            <a href="produk.html" class="btn btn-primary">
+                                <i class="fas fa-shopping-basket"></i>
+                                Lihat Jajanan Kami
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `,
+            category: "resep",
+            date: "2024-02-12",
+            readTime: "5 min",
+            image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            author: "ALWANU ZAKY RAIHAN",
+            featured: false,
+            tags: ["Jajanan Solo", "Camilan Tradisional", "Resep"]
+        },
+        
+        // ARTIKEL WISATA KULINER
+        {
+            id: "wisata-kuliner-solo",
+            title: "Jelajah Wisata Kuliner Solo: Dari Pasar Tradisional sampai Restoran Modern",
+            excerpt: "Panduan lengkap untuk menikmati kekayaan kuliner Solo.",
+            content: `...` // content sama seperti sebelumnya
+        },
+        {
+            id: "pasar-tradisional-solo",
+            title: "Pasar Tradisional Solo: Surga Kuliner yang Tak Pernah Tidur",
+            excerpt: "Eksplorasi pasar-pasar tradisional Solo yang menjadi jantung kehidupan kuliner kota.",
+            content: `
+                <article class="article-full">
+                    <header class="article-header">
+                        <div class="article-category">
+                            <span class="category-badge wisata">Wisata Kuliner</span>
+                        </div>
+                        <h1 class="article-title">Pasar Tradisional Solo: Surga Kuliner yang Tak Pernah Tidur</h1>
+                        <div class="article-meta">
+                            <div class="meta-author">
+                                <i class="fas fa-user"></i>
+                                <span>ALWANU ZAKY RAIHAN</span>
+                            </div>
+                            <div class="meta-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>8 Februari 2024</span>
+                            </div>
+                            <div class="meta-read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>7 min read</span>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div class="article-hero">
+                        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Pasar Tradisional Solo" loading="lazy">
+                    </div>
+                    
+                    <div class="article-content">
+                        <p class="lead">Pasar tradisional di Solo bukan sekadar tempat berbelanja, tetapi pusat kehidupan sosial dan kuliner yang telah berdenyut selama berabad-abad.</p>
+                        
+                        <h2>Pasar Gede Harjodaksino</h2>
+                        <p>Pasar terbesar dan tertua di Solo (berdiri 1929):</p>
+                        
+                        <ul>
+                            <li><strong>Lokasi:</strong> Jl. Urip Sumoharjo, pusat kota</li>
+                            <li><strong>Jam operasional:</strong> 24 jam (area tertentu)</li>
+                            <li><strong>Spesialisasi:</strong> Bahan makanan segar dan bumbu tradisional</li>
+                            <li><strong>Makanan khas:</strong> Sate kambing, nasi liwet, dawet</li>
+                        </ul>
+                        
+                        <div class="article-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Di Pasar Gede, Anda bisa menemukan hampir semua bahan makanan tradisional Jawa yang sulit ditemukan di tempat lain.</p>
+                        </div>
+                        
+                        <h2>Pasar Klewer - Surga Batik dan Kuliner</h2>
+                        <p>Pasar batik terbesar di Indonesia yang juga menawarkan kuliner khas:</p>
+                        
+                        <div class="article-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Makanan</th>
+                                        <th>Lokasi di Pasar</th>
+                                        <th>Waktu Terbaik</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Nasi Pecel Solo</td>
+                                        <td>Lantai 2, deretan timur</td>
+                                        <td>08:00 - 14:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Es Dawet Telasih</td>
+                                        <td>Depan pintu masuk utama</td>
+                                        <td>10:00 - 22:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Soto Gading</td>
+                                        <td>Area food court lantai 1</td>
+                                        <td>06:00 - 18:00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Kue Legendaris</td>
+                                        <td>Deretan kue basah</td>
+                                        <td>06:00 - 12:00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h2>Pasar Legi - Jajanan Pasar Lengkap</h2>
+                        <p>Pusat jajanan pasar tradisional:</p>
+                        
+                        <ol>
+                            <li><strong>Kue mangkok:</strong> Berbagai varian warna dan rasa</li>
+                            <li><strong>Klepon:</strong> Bola ketan isi gula merah</li>
+                            <li><strong>Lumpur:</strong> Kue lembut dengan topping kelapa</li>
+                            <li><strong>Putu ayu:</strong> Kue hijau dengan kelapa parut</li>
+                            <li><strong>Wajik:</strong> Ketan manis potong kotak</li>
+                        </ol>
+                        
+                        <h2>Tips Berbelanja di Pasar Tradisional Solo</h2>
+                        
+                        <div class="article-tips">
+                            <h3><i class="fas fa-lightbulb"></i> Tips dari Pengunjung:</h3>
+                            <ul>
+                                <li><strong>Datang pagi:</strong> Untuk mendapatkan bahan terbaik</li>
+                                <li><strong>Bawa uang tunai:</strong> Kebanyakan pedagang tidak terima kartu</li>
+                                <li><strong>Tawar menawar:</strong> Budaya yang biasa dilakukan</li>
+                                <li><strong>Cicipi dulu:</strong> Untuk makanan yang belum dikenal</li>
+                                <li><strong>Bertanya:</strong> Pedagang senang berbagi cerita</li>
+                            </ul>
+                        </div>
+                        
+                        <h2>Pasar Malam - Pengalaman Berbeda</h2>
+                        <p>Setiap malam, beberapa pasar memiliki area khusus:</p>
+                        
+                        <ul>
+                            <li><strong>Pasar Malam Gede:</strong> Street food lengkap</li>
+                            <li><strong>Pasar Kembang:</strong> Makanan ringan dan minuman</li>
+                            <li><strong>Pasar Windujenar:</strong> Makanan berat dan jajanan</li>
+                        </ul>
+                        
+                        <div class="article-cta">
+                            <h3>Mulai Petualangan Kuliner Anda</h3>
+                            <p>Mulailah dengan mencicipi hidangan autentik dari Makanan Wong Solo sebagai pengantar sebelum menjelajahi pasar tradisional Solo.</p>
+                            <a href="produk.html" class="btn btn-primary">
+                                <i class="fas fa-map-signs"></i>
+                                Mulai Petualangan
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `,
+            category: "wisata",
+            date: "2024-02-08",
+            readTime: "7 min",
+            image: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            author: "ALWANU ZAKY RAIHAN",
+            featured: false,
+            tags: ["Pasar Solo", "Wisata Pasar", "Kuliner Lokal"]
+        },
+        {
+            id: "keraton-solo-kuliner",
+            title: "Keraton Surakarta: Pusat Peradaban Kuliner Jawa",
+            excerpt: "Eksplorasi warisan kuliner Keraton Surakarta yang telah mempengaruhi cita rasa makanan Jawa selama berabad-abad.",
+            content: `
+                <article class="article-full">
+                    <header class="article-header">
+                        <div class="article-category">
+                            <span class="category-badge budaya">Budaya</span>
+                        </div>
+                        <h1 class="article-title">Keraton Surakarta: Pusat Peradaban Kuliner Jawa</h1>
+                        <div class="article-meta">
+                            <div class="meta-author">
+                                <i class="fas fa-user"></i>
+                                <span>ALWANU ZAKY RAIHAN</span>
+                            </div>
+                            <div class="meta-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>22 Februari 2024</span>
+                            </div>
+                            <div class="meta-read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div class="article-hero">
+                        <img src="https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Keraton Surakarta" loading="lazy">
+                    </div>
+                    
+                    <div class="article-content">
+                        <p class="lead">Keraton Surakarta Hadiningrat bukan hanya pusat pemerintahan, tetapi juga pusat peradaban kuliner Jawa yang telah mempengaruhi cita rasa Nusantara.</p>
+                        
+                        <h2>Sejarah Dapur Keraton</h2>
+                        <p>Dapur Keraton Surakarta telah beroperasi sejak 1745 dan menjadi standar masakan Jawa:</p>
+                        
+                        <ul>
+                            <li><strong>Abad 18:</strong> Pengembangan resep dasar masakan Jawa</li>
+                            <li><strong>Abad 19:</strong> Pengaruh kolonial dan adaptasi</li>
+                            <li><strong>Abad 20:</strong> Standardisasi dan penyebaran ke masyarakat</li>
+                            <li><strong>Abad 21:</strong> Pelestarian dan modernisasi</li>
+                        </ul>
+                        
+                        <div class="article-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Setiap hidangan yang keluar dari dapur keraton adalah masterpiece yang mencerminkan filosofi hidup orang Jawa.</p>
+                        </div>
+                        
+                        <h2>Struktur Dapur Keraton</h2>
+                        <p>Dapur keraton terbagi menjadi beberapa bagian khusus:</p>
+                        
+                        <div class="article-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Dapur</th>
+                                        <th>Fungsi</th>
+                                        <th>Makanan yang Dihasilkan</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Dapur Ageng</td>
+                                        <td>Makanan untuk upacara besar</td>
+                                        <td>Tumpeng Agung, Nasi Bogana</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dapur Tengah</td>
+                                        <td>Makanan sehari-hari keluarga keraton</td>
+                                        <td>Nasi Liwet, Sayur Lodeh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dapur Alit</td>
+                                        <td>Makanan untuk tamu penting</td>
+                                        <td>Selat Solo, Timlo</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Dapur Jajan</td>
+                                        <td>Kue dan jajanan tradisional</td>
+                                        <td>Kue Mangkok, Serabi, Klepon</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h2>Filosofi dalam Penyajian</h2>
+                        <p>Setiap aspek penyajian memiliki makna:</p>
+                        
+                        <ol>
+                            <li><strong>Warna:</strong> Merah (keberanian), putih (kesucian), kuning (kebijaksanaan)</li>
+                            <li><strong>Bentuk:</strong> Bulat (kesempurnaan), segitiga (kestabilan)</li>
+                            <li><strong>Susunan:</strong> Hierarki sesuai status sosial</li>
+                            <li><strong>Waktu:</strong> Pagi (kesegaran), siang (energi), malam (istirahat)</li>
+                        </ol>
+                        
+                        <h2>Warisan yang Masih Hidup</h2>
+                        <p>Beberapa tradisi kuliner keraton yang masih terjaga:</p>
+                        
+                        <ul>
+                            <li><strong>Ubarampe:</strong> Syarat makanan untuk upacara</li>
+                            <li><strong>Sajen:</strong> Persembahan makanan kepada leluhur</li>
+                            <li><strong>Kenduri:</strong> Jamuan makan bersama</li>
+                            <li><strong>Selamatan:</strong> Makanan untuk acara syukuran</li>
+                        </ul>
+                        
+                        <h2>Pengaruh terhadap Makanan Wong Solo</h2>
+                        <p>Kami di Makanan Wong Solo bangga melanjutkan warisan ini:</p>
+                        
+                        <div class="article-tips">
+                            <h3><i class="fas fa-lightbulb"></i> Warisan yang Kami Jaga:</h3>
+                            <ul>
+                                <li><strong>Resep asli:</strong> Turun-temurun dari keluarga keraton</li>
+                                <li><strong>Teknik tradisional:</strong> Masak dengan kendil dan api kayu</li>
+                                <li><strong>Bahan pilihan:</strong> Hanya yang terbaik seperti di keraton</li>
+                                <li><strong>Penyajian:</strong> Memperhatikan filosofi Jawa</li>
+                                <li><strong>Rasa:</strong> Autentik tanpa kompromi</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="article-cta">
+                            <h3>Rasakan Warisan Keraton</h3>
+                            <p>Cicipi makanan dengan resep asli Keraton Surakarta yang telah diwariskan selama berabad-abad.</p>
+                            <a href="produk.html" class="btn btn-primary">
+                                <i class="fas fa-crown"></i>
+                                Pesan Makanan Keraton
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `,
+            category: "budaya",
+            date: "2024-02-22",
+            readTime: "8 min",
+            image: "https://images.unsplash.com/photo-1548013146-72479768bada?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            author: "ALWANU ZAKY RAIHAN",
+            featured: true,
+            tags: ["Keraton Solo", "Budaya Jawa", "Warisan Kuliner"]
+        },
+        
+        // TAMBAHAN ARTIKEL BARU
+        {
+            id: "serabi-notosuman-legenda",
+            title: "Serabi Notosuman: Legenda Rasa yang Tak Tergantikan",
+            excerpt: "Kisah di balik Serabi Notosuman, warung legendaris yang telah menyajikan serabi autentik selama lebih dari 100 tahun.",
+            content: `
+                <article class="article-full">
+                    <header class="article-header">
+                        <div class="article-category">
+                            <span class="category-badge sejarah">Sejarah</span>
+                        </div>
+                        <h1 class="article-title">Serabi Notosuman: Legenda Rasa yang Tak Tergantikan</h1>
+                        <div class="article-meta">
+                            <div class="meta-author">
+                                <i class="fas fa-user"></i>
+                                <span>ALWANU ZAKY RAIHAN</span>
+                            </div>
+                            <div class="meta-date">
+                                <i class="fas fa-calendar"></i>
+                                <span>5 Februari 2024</span>
+                            </div>
+                            <div class="meta-read-time">
+                                <i class="fas fa-clock"></i>
+                                <span>5 min read</span>
+                            </div>
+                        </div>
+                    </header>
+                    
+                    <div class="article-hero">
+                        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" 
+                             alt="Serabi Notosuman" loading="lazy">
+                    </div>
+                    
+                    <div class="article-content">
+                        <p class="lead">Sejak 1910, Serabi Notosuman telah menjadi ikon kuliner Solo yang tak tergantikan, melewati tiga zaman dengan cita rasa yang tetap autentik.</p>
+                        
+                        <h2>Asal Mula Nama "Notosuman"</h2>
+                        <p>Nama Notosuman berasal dari nama pendirinya, Notosuman, seorang perempuan tangguh yang memulai usaha dari gerobak kecil di depan rumahnya di Jalan Moh. Yamin.</p>
+                        
+                        <div class="article-quote">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Rahasia Serabi Notosuman ada pada kesabaran dan ketelitian. Setiap adonan harus difermentasi semalaman." - Generasi ketiga Notosuman</p>
+                        </div>
+                        
+                        <h2>Proses Pembuatan yang Unik</h2>
+                        <p>Apa yang membuat Serabi Notosuman istimewa:</p>
+                        
+                        <ul>
+                            <li><strong>Fermentasi 12 jam:</strong> Adonan difermentasi semalaman</li>
+                            <li><strong>Cetakan tembaga:</strong> Bukan cetakan biasa, tetapi tembaga khusus</li>
+                            <li><strong>Api arang kayu jati:</strong> Memberikan aroma smokey khas</li>
+                            <li><strong>Kelapa parut segar:</strong> Diparut manual setiap pagi</li>
+                            <li><strong>Gula aren asli:</strong> Bukan gula pasir biasa</li>
+                        </ul>
+                        
+                        <h2>Warisan dari Generasi ke Generasi</h2>
+                        <p>Notosuman telah melewati tiga generasi:</p>
+                        
+                        <ol>
+                            <li><strong>Generasi 1 (1910-1950):</strong> Notosuman - Pendiri</li>
+                            <li><strong>Generasi 2 (1950-1990):</strong> Anak dan menantu</li>
+                            <li><strong>Generasi 3 (1990-sekarang):</strong> Cucu dan cicit</li>
+                        </ol>
+                        
+                        <h2>Pengaruh terhadap Kuliner Solo</h2>
+                        <p>Serabi Notosuman mempengaruhi:</p>
+                        
+                        <div class="article-table">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Pengaruh</th>
+                                        <th>Keterangan</th>
+                                        <th>Hasil</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Standar rasa</td>
+                                        <td>Menjadi patokan serabi Solo</td>
+                                        <td>Serabi harus manis gurih seimbang</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Teknik memasak</td>
+                                        <td>Fermentasi wajib 12 jam</td>
+                                        <td>Tekstur lembut dan berpori</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Bahan baku</td>
+                                        <td>Gula aren wajib, bukan gula pasir</td>
+                                        <td>Rasa manis yang khas</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="article-cta">
+                            <h3>Rasakan Legenda</h3>
+                            <p>Kami di Makanan Wong Solo menghormati warisan Notosuman dengan menjaga keaslian rasa Serabi Solo.</p>
+                            <a href="produk.html#serabi-solo" class="btn btn-primary">
+                                <i class="fas fa-history"></i>
+                                Pesan Serabi Legendaris
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            `,
+            category: "sejarah",
+            date: "2024-02-05",
+            readTime: "5 min",
+            image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+            author: "ALWANU ZAKY RAIHAN",
+            featured: false,
+            tags: ["Serabi Notosuman", "Legenda Solo", "Warisan Rasa"]
+        }
+    ];
+    
+        // Initialize articles page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load featured article
+            loadFeaturedArticle();
+            
+            // Load articles grid
+            loadArticlesGrid();
+            
+            // Setup category filters
+            setupCategoryFilters();
+            
+            // Setup search
+            setupArticleSearch();
+            
+            // Setup load more
+            setupLoadMore();
+            
+            // Setup newsletter form
+            setupNewsletter();
+            
+            // Setup article modal
+            setupArticleModal();
+            
+            // Update cart counter
+            updateCartCounter();
+        });
+
+        // Load featured article
+        function loadFeaturedArticle() {
+            const featuredArticle = articlesData.find(article => article.featured) || articlesData[0];
+            const featuredContainer = document.getElementById('featuredArticle');
+            
+            if (!featuredContainer || !featuredArticle) return;
+            
+            featuredContainer.innerHTML = `
+                <div class="featured-content">
+                    <div class="featured-category">
+                        <span class="category-badge ${featuredArticle.category}">${getCategoryName(featuredArticle.category)}</span>
+                    </div>
+                    <h2 class="featured-title">${featuredArticle.title}</h2>
+                    <p class="featured-excerpt">${featuredArticle.excerpt}</p>
+                    <div class="featured-meta">
+                        <div class="meta-item">
+                            <i class="fas fa-user"></i>
+                            <span>${featuredArticle.author}</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>${formatDate(featuredArticle.date)}</span>
+                        </div>
+                        <div class="meta-item">
+                            <i class="fas fa-clock"></i>
+                            <span>${featuredArticle.readTime}</span>
+                        </div>
+                    </div>
+                    <div class="featured-actions">
+                        <button class="btn btn-primary btn-read-more" data-id="${featuredArticle.id}">
+                            <i class="fas fa-book-open"></i>
+                            Baca Artikel
+                        </button>
+                        <button class="btn btn-outline btn-share" data-id="${featuredArticle.id}">
+                            <i class="fas fa-share-alt"></i>
+                            Bagikan
+                        </button>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <img src="${featuredArticle.image}" alt="${featuredArticle.title}" loading="lazy">
+                </div>
+            `;
+            
+            // Add event listener to read more button
+            const readMoreBtn = featuredContainer.querySelector('.btn-read-more');
+            if (readMoreBtn) {
+                readMoreBtn.addEventListener('click', function() {
+                    const articleId = this.dataset.id;
+                    openArticleModal(articleId);
+                });
+            }
+        }
+
+        // Load articles grid
+        function loadArticlesGrid(articles = articlesData, limit = 6) {
+            const articlesContainer = document.getElementById('articlesContainer');
+            const loadMoreContainer = document.getElementById('loadMoreContainer');
+            
+            if (!articlesContainer) return;
+            
+            // Filter out featured article from grid
+            const gridArticles = articles.filter(article => !article.featured).slice(0, limit);
+            
+            if (gridArticles.length === 0) {
+                articlesContainer.innerHTML = `
+                    <div class="no-articles">
+                        <i class="fas fa-newspaper"></i>
+                        <h3>Tidak ada artikel ditemukan</h3>
+                        <p>Coba gunakan kata kunci lain atau pilih kategori berbeda.</p>
+                    </div>
+                `;
+                if (loadMoreContainer) loadMoreContainer.style.display = 'none';
+                return;
+            }
+            
+            articlesContainer.innerHTML = gridArticles.map(article => `
+                <article class="article-card" data-category="${article.category}">
+                    <div class="article-image">
+                        <img src="${article.image}" alt="${article.title}" loading="lazy">
+                        <div class="article-category">
+                            <span class="category-badge ${article.category}">${getCategoryName(article.category)}</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">
+                            <div class="meta-item">
+                                <i class="fas fa-calendar"></i>
+                                <span>${formatDate(article.date)}</span>
+                            </div>
+                            <div class="meta-item">
+                                <i class="fas fa-clock"></i>
+                                <span>${article.readTime}</span>
+                            </div>
+                        </div>
+                        <h3 class="article-title">${article.title}</h3>
+                        <p class="article-excerpt">${article.excerpt}</p>
+                        <div class="article-actions">
+                            <button class="btn btn-outline btn-sm btn-read" data-id="${article.id}">
+                                <i class="fas fa-book-open"></i>
+                                Baca
+                            </button>
+                            <div class="article-tags">
+                                ${article.tags.slice(0, 2).map(tag => `
+                                    <span class="tag">${tag}</span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+            
+            // Show/hide load more button
+            if (loadMoreContainer) {
+                if (articles.filter(article => !article.featured).length > limit) {
+                    loadMoreContainer.style.display = 'flex';
+                } else {
+                    loadMoreContainer.style.display = 'none';
+                }
+            }
+            
+            // Add event listeners to read buttons
+            document.querySelectorAll('.btn-read').forEach(button => {
+                button.addEventListener('click', function() {
+                    const articleId = this.dataset.id;
+                    openArticleModal(articleId);
+                });
+            });
+        }
+
+        // Setup category filters
+        function setupCategoryFilters() {
+            const categoryButtons = document.querySelectorAll('.category-filter');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    if (category === 'all') {
+                        loadArticlesGrid(articlesData);
+                    } else {
+                        const filteredArticles = articlesData.filter(article => article.category === category);
+                        loadArticlesGrid(filteredArticles);
+                    }
+                });
+            });
+        }
+
+        // Setup article search
+        function setupArticleSearch() {
+            const searchInput = document.getElementById('articleSearch');
+            
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase().trim();
+                    
+                    if (searchTerm.length === 0) {
+                        loadArticlesGrid(articlesData);
+                        return;
+                    }
+                    
+                    const filteredArticles = articlesData.filter(article => 
+                        article.title.toLowerCase().includes(searchTerm) ||
+                        article.excerpt.toLowerCase().includes(searchTerm) ||
+                        article.tags.some(tag => tag.toLowerCase().includes(searchTerm))
+                    );
+                    
+                    loadArticlesGrid(filteredArticles);
+                });
+            }
+        }
+
+        // Setup load more
+        function setupLoadMore() {
+            const loadMoreBtn = document.getElementById('loadMoreBtn');
+            let currentLimit = 6;
+            
+            if (loadMoreBtn) {
+                loadMoreBtn.addEventListener('click', function() {
+                    currentLimit += 3;
+                    loadArticlesGrid(articlesData, currentLimit);
+                });
+            }
+        }
+
+        // Setup newsletter
+        function setupNewsletter() {
+            const newsletterForm = document.getElementById('newsletterForm');
+            
+            if (newsletterForm) {
+                newsletterForm.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    
+                    const email = document.getElementById('newsletterEmail').value;
+                    
+                    if (!email) {
+                        showNotification('Harap masukkan email', 'error');
+                        return;
+                    }
+                    
+                    // Simulate newsletter subscription
+                    showNotification('Terima kasih telah berlangganan newsletter kami!', 'success');
+                    newsletterForm.reset();
+                });
+            }
+        }
+
+        // Setup article modal
+        function setupArticleModal() {
+            const modal = document.getElementById('articleModal');
+            const overlay = document.getElementById('articleOverlay');
+            const closeBtn = document.getElementById('articleClose');
+            
+            if (overlay) {
+                overlay.addEventListener('click', closeArticleModal);
+            }
+            
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeArticleModal);
+            }
+            
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape' && modal.classList.contains('active')) {
+                    closeArticleModal();
+                }
+            });
+        }
+
+        // Open article modal
+        function openArticleModal(articleId) {
+            const article = articlesData.find(a => a.id === articleId);
+            const modalBody = document.getElementById('articleModalBody');
+            const modal = document.getElementById('articleModal');
+            
+            if (!article || !modalBody || !modal) return;
+            
+            modalBody.innerHTML = article.content;
+            
+            // Add share functionality
+            const shareButtons = modalBody.querySelectorAll('.share-btn');
+            shareButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const platform = this.dataset.platform;
+                    shareArticle(article, platform);
+                });
+            });
+            
+            // Show modal
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close article modal
+        function closeArticleModal() {
+            const modal = document.getElementById('articleModal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Helper functions
+        function getCategoryName(category) {
+            const categories = {
+                'sejarah': 'Sejarah',
+                'budaya': 'Budaya',
+                'resep': 'Resep & Tips',
+                'wisata': 'Wisata Kuliner'
+            };
+            return categories[category] || category;
+        }
+
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            return date.toLocaleDateString('id-ID', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+        }
+
+        function showNotification(message, type = 'info') {
+            if (window.MakananWongSolo && window.MakananWongSolo.showNotification) {
+                window.MakananWongSolo.showNotification(message, type);
+            } else {
+                alert(message);
+            }
+        }
+
+        function shareArticle(article, platform) {
+            const url = window.location.href;
+            const text = `Baca artikel menarik: ${article.title} - Makanan Wong Solo`;
+            
+            let shareUrl = '';
+            
+            switch(platform) {
+                case 'whatsapp':
+                    shareUrl = `https://api.whatsapp.com/send?text=${encodeURIComponent(text + ' ' + url)}`;
+                    break;
+                case 'facebook':
+                    shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
+                    break;
+                case 'twitter':
+                    shareUrl = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`;
+                    break;
+                default:
+                    return;
+            }
+            
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+        }
+
+        function updateCartCounter() {
+            const cartCounter = document.getElementById('cartCounter');
+            if (cartCounter) {
+                try {
+                    const cart = JSON.parse(localStorage.getItem('makananWongSoloCart')) || [];
+                    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                    const countElement = cartCounter.querySelector('.cart-count');
+                    if (countElement) {
+                        countElement.textContent = totalItems;
+                        countElement.style.display = totalItems > 0 ? 'flex' : 'none';
+                    }
+                } catch (error) {
+                    console.error('Error updating cart counter:', error);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Makanan Wong Solo - Melestarikan Cita Rasa Autentik Makanan Tradisional Surakarta">
+    <meta name="keywords" content="makanan solo, tradisional, nasi liwet, selat solo, serabi, kuliner jawa">
+    <meta name="author" content="ALWANU ZAKY RAIHAN">
+    
+    <title>Beranda - Makanan Wong Solo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Batik Background Pattern -->
+    <div class="batik-pattern"></div>
+    
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- WhatsApp Bubble -->
+    <div class="wa-bubble">
+        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+           target="_blank" 
+           class="wa-link"
+           aria-label="Hubungi via WhatsApp">
+            <div class="wa-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="wa-tooltip">
+                Tanya via WhatsApp
+            </div>
+        </a>
+    </div>
+    
+    <!-- Header -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper">
+            <!-- Logo -->
+            <div class="logo-section">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Makanan</span>
+                        <span class="logo-subtitle">Wong Solo</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Cart Counter -->
+            <div class="cart-counter" id="cartCounter">
+                <a href="pesanan.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Makanan Wong Solo</span>
+                </div>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="mobile-nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="mobile-nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="mobile-nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="mobile-nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="hero-section section-padding">
+            <div class="container">
+                <div class="hero-grid">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <span class="badge-text">Sejak 1995</span>
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="text-primary">Cita Rasa Autentik</span><br>
+                            <span class="text-gold">Warisan Kuliner</span><br>
+                            <span class="text-dark">Kota Solo</span>
+                        </h1>
+                        <p class="hero-description">
+                            Menjaga keaslian resep turun-temurun keluarga Keraton Surakarta. 
+                            Setiap hidangan kami adalah cerita budaya yang diwariskan selama berabad-abad.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="produk.html" class="btn btn-primary">
+                                <i class="fas fa-utensils"></i>
+                                Lihat Menu
+                            </a>
+                            <a href="#testimonials" class="btn btn-outline">
+                                <i class="fas fa-star"></i>
+                                Testimoni Pelanggan
+                            </a>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">28+</span>
+                                <span class="stat-label">Tahun Berpengalaman</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">50K+</span>
+                                <span class="stat-label">Pelanggan Puas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Resep Autentik</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="image-frame">
+                            <div class="frame-decoration"></div>
+                            <img src="gambar/liwet.jpeg" 
+                                 alt="Makanan Tradisional Solo" class="hero-img" loading="lazy">
+                            <div class="image-overlay">
+                                <div class="overlay-text">
+                                    <i class="fas fa-award"></i>
+                                    <span>Terbaik 2025</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-section bg-light section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Menu Unggulan</h2>
+                    <p class="section-subtitle">Rekomendasi terbaik dari dapur Makanan Wong Solo</p>
+                </div>
+                
+                <div class="featured-grid">
+                    <!-- Product 1 -->
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="gambar/liwet.jpeg" 
+                                 alt="Nasi Liwet Solo" loading="lazy">
+                            <div class="featured-badge">
+                                <i class="fas fa-fire"></i>
+                                Terlaris
+                            </div>
+                        </div>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Nasi Liwet Solo</h3>
+                            <p class="featured-description">
+                                Nasi dimasak dengan santan dan rempah-rempah khas, disajikan dengan lauk pelengkap autentik.
+                            </p>
+                            <div class="featured-price">
+                                <span class="price">Rp 35.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    4.9 (1280)
+                                </span>
+                            </div>
+                            <div class="featured-actions">
+                                <a href="produk.html#nasi-liwet" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-info-circle"></i>
+                                    Detail
+                                </a>
+                                <button class="btn btn-secondary btn-sm btn-order" data-product="Nasi Liwet" data-price="35000" data-id="nasi-liwet">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2 -->
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="gambar/selat.jpeg" 
+                                 alt="Selat Solo" loading="lazy">
+                            <div class="featured-badge">
+                                <i class="fas fa-crown"></i>
+                                Premium
+                            </div>
+                        </div>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Selat Solo</h3>
+                            <p class="featured-description">
+                                Hidangan istimewa dengan daging sapi pilihan, saus spesial, dan sayuran segar.
+                            </p>
+                            <div class="featured-price">
+                                <span class="price">Rp 45.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    4.8 (950)
+                                </span>
+                            </div>
+                            <div class="featured-actions">
+                                <a href="produk.html#selat-solo" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-info-circle"></i>
+                                    Detail
+                                </a>
+                                <button class="btn btn-secondary btn-sm btn-order" data-product="Selat Solo" data-price="45000" data-id="selat-solo">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3 -->
+                    <div class="featured-card">
+                        <div class="featured-image">
+                            <img src="gambar/serabi.jpeg" 
+                                 alt="Serabi Solo" loading="lazy">
+                            <div class="featured-badge">
+                                <i class="fas fa-heart"></i>
+                                Favorit
+                            </div>
+                        </div>
+                        <div class="featured-content">
+                            <h3 class="featured-title">Serabi Solo</h3>
+                            <p class="featured-description">
+                                Kue tradisional Solo dengan tekstur lembut dan rasa manis gurih yang khas.
+                            </p>
+                            <div class="featured-price">
+                                <span class="price">Rp 25.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i>
+                                    4.7 (2100)
+                                </span>
+                            </div>
+                            <div class="featured-actions">
+                                <a href="produk.html#serabi-solo" class="btn btn-primary btn-sm">
+                                    <i class="fas fa-info-circle"></i>
+                                    Detail
+                                </a>
+                                <button class="btn btn-secondary btn-sm btn-order" data-product="Serabi Solo" data-price="25000" data-id="serabi-solo">
+                                    <i class="fas fa-cart-plus"></i>
+                                    Pesan
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="produk.html" class="btn btn-primary">
+                        <i class="fas fa-book-open"></i>
+                        Lihat Semua Menu
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="services-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Layanan Kami</h2>
+                    <p class="section-subtitle">Kami memberikan pengalaman terbaik dalam menikmati kuliner Solo</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-shipping-fast"></i>
+                        </div>
+                        <h3 class="service-title">Pengiriman Cepat</h3>
+                        <p class="service-description">
+                            Pesanan diantar dalam waktu 30-45 menit dengan sistem pengemasan khusus agar makanan tetap fresh.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-seedling"></i>
+                        </div>
+                        <h3 class="service-title">Bahan Berkualitas</h3>
+                        <p class="service-description">
+                            Hanya menggunakan bahan pilihan terbaik langsung dari pasar tradisional Solo.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3 class="service-title">Resep Autentik</h3>
+                        <p class="service-description">
+                            Resep turun-temurun dari keluarga Keraton Surakarta yang tidak berubah selama puluhan tahun.
+                        </p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h3 class="service-title">Layanan 24/7</h3>
+                        <p class="service-description">
+                            Customer service siap membantu kapan saja melalui WhatsApp dan telepon.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials-section bg-light section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Testimoni Pelanggan</h2>
+                    <p class="section-subtitle">Apa kata mereka yang telah merasakan kelezatan Makanan Wong Solo</p>
+                </div>
+                
+                <div class="testimonials-grid" id="testimonialsContainer">
+                    <!-- Testimoni akan dimuat dari localStorage -->
+                </div>
+
+                <div class="testimonials-actions">
+                    <a href="testimoni.html" class="btn btn-outline">
+                        <i class="fas fa-comments"></i>
+                        Lihat Semua Testimoni
+                    </a>
+                    <a href="testimoni.html" class="btn btn-primary">
+                        <i class="fas fa-edit"></i>
+                        Tambah Testimoni
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Maosan Preview Section -->
+        <section class="maosan-preview-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Maosan Terbaru</h2>
+                    <p class="section-subtitle">Kabar dan cerita seputar kuliner tradisional Solo</p>
+                </div>
+                
+                <div class="maosan-grid">
+                    <article class="maosan-card">
+                        <div class="maosan-image">
+                            <img src="gambar/liwet.jpeg" 
+                                 alt="Sejarah Nasi Liwet" loading="lazy">
+                        </div>
+                        <div class="maosan-content">
+                            <div class="maosan-meta">
+                                <span class="maosan-category">Sejarah</span>
+                                <span class="maosan-date">15 Maret 2024</span>
+                            </div>
+                            <h3 class="maosan-title">Asal Usul Nasi Liwet Solo</h3>
+                            <p class="maosan-excerpt">
+                                Nasi Liwet bukan sekadar makanan biasa, melainkan memiliki nilai sejarah yang dalam dalam budaya Jawa.
+                            </p>
+                            <a href="maosan.html" class="maosan-link">
+                                Baca Selengkapnya
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="maosan-card">
+                        <div class="maosan-image">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Budaya Makan Solo" loading="lazy">
+                        </div>
+                        <div class="maosan-content">
+                            <div class="maosan-meta">
+                                <span class="maosan-category">Budaya</span>
+                                <span class="maosan-date">10 Maret 2024</span>
+                            </div>
+                            <h3 class="maosan-title">Filosofi Makanan dalam Budaya Jawa</h3>
+                            <p class="maosan-excerpt">
+                                Setiap hidangan tradisional Solo memiliki filosofi dan makna mendalam dalam kehidupan masyarakat Jawa.
+                            </p>
+                            <a href="maosan.html" class="maosan-link">
+                                Baca Selengkapnya
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="maosan-card">
+                        <div class="maosan-image">
+                            <img src="https://images.unsplash.com/photo-1490818387583-1baba5e638af?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
+                                 alt="Resep Tradisional" loading="lazy">
+                        </div>
+                        <div class="maosan-content">
+                            <div class="maosan-meta">
+                                <span class="maosan-category">Resep</span>
+                                <span class="maosan-date">5 Maret 2024</span>
+                            </div>
+                            <h3 class="maosan-title">Rahasia Rempah Serabi Solo</h3>
+                            <p class="maosan-excerpt">
+                                Temukan rahasia rempah-rempah khas yang membuat Serabi Solo memiliki cita rasa yang unik.
+                            </p>
+                            <a href="maosan.html" class="maosan-link">
+                                Baca Selengkapnya
+                                <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="text-center" style="margin-top: 3rem;">
+                    <a href="maosan.html" class="btn btn-primary">
+                        <i class="fas fa-newspaper"></i>
+                        Baca Semua Maosan
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section bg-dark section-padding">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Siap Menikmati Kelezatan Solo?</h2>
+                    <p class="cta-description">
+                        Pesan sekarang dan rasakan cita rasa autentik warisan kuliner Keraton Surakarta langsung ke meja Anda.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="produk.html" class="btn btn-secondary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Pesan Sekarang
+                        </a>
+                        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+                           target="_blank" class="btn btn-outline" style="color: white; border-color: white;">
+                            <i class="fab fa-whatsapp"></i>
+                            Konsultasi Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer-section bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Makanan</span>
+                            <span class="logo-subtitle">Wong Solo</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Melestarikan cita rasa autentik makanan tradisional Surakarta sejak 1995. 
+                        Warisan kuliner keluarga Keraton Surakarta.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+                           target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/makananwongsolo" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:makananwongsolo@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Kontak Kami</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>WhatsApp: +62 895-1343-9235</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram: @makananwongsolo</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: makananwongsolo@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-address">
+                    <h3 class="footer-title">Alamat</h3>
+                    <div class="address-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Yos Sudarso, Gawanan,<br>
+                           Kec. Colomadu,<br>
+                           Kab. Karanganyar,<br>
+                           Jawa Tengah 57175</p>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h3 class="footer-title">Jam Buka</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span>Senin - Kamis</span>
+                            <span>08:00 - 16:00 WIB</span>
+                        </li>
+                        <li>
+                            <span>Jum'at - Minggu/Hari Libur</span>
+                            <span>10:00 - 16:00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Makanan Wong Solo. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="produk.html">Produk</a>
+                    <a href="pesanan.html">Pesanan</a>
+                    <a href="maosan.html">Maosan</a>
+                    <a href="testimoni.html">Testimoni</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Files -->
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- Inline script untuk index.html -->
+    <script>
+        // Testimonial default data
+        const defaultTestimonials = [
+            {
+                name: "Budi Santoso",
+                text: "Nasi Liwetnya autentik banget! Rasa kayak zaman kecil dulu. Pelayanannya juga cepat.",
+                rating: 5,
+                date: "2024-03-10",
+                avatar: "https://ui-avatars.com/api/?name=Budi+Santoso&background=B71C1C&color=fff"
+            },
+            {
+                name: "Sari Dewi",
+                text: "Serabi Solonya lembut dan enak. Keluarga saya suka semua. Pengiriman tepat waktu!",
+                rating: 4,
+                date: "2024-03-08",
+                avatar: "https://ui-avatars.com/api/?name=Sari+Dewi&background=D4AF37&color=000"
+            },
+            {
+                name: "Agus Prasetyo",
+                text: "Selat Solonya juara! Dagingnya empuk, sausnya khas banget. Recommended!",
+                rating: 5,
+                date: "2024-03-05",
+                avatar: "https://ui-avatars.com/api/?name=Agus+Prasetyo&background=5D4037&color=fff"
+            }
+        ];
+
+        // Load testimonials
+        function loadHomeTestimonials() {
+            const testimonialsContainer = document.getElementById('testimonialsContainer');
+            if (!testimonialsContainer) return;
+            
+            try {
+                // Coba ambil dari localStorage
+                let testimonials = defaultTestimonials;
+                const stored = localStorage.getItem('makananWongSoloTestimonials');
+                
+                if (stored) {
+                    const parsed = JSON.parse(stored);
+                    if (Array.isArray(parsed) && parsed.length > 0) {
+                        testimonials = parsed.slice(0, 3);
+                    }
+                }
+                
+                // Render testimonials
+                testimonialsContainer.innerHTML = testimonials.map(testimonial => `
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="${testimonial.avatar}" alt="Foto ${testimonial.name}" class="avatar-img">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4 class="testimonial-name">${testimonial.name}</h4>
+                                <div class="testimonial-date">${new Date(testimonial.date).toLocaleDateString('id-ID', {
+                                    day: 'numeric',
+                                    month: 'long',
+                                    year: 'numeric'
+                                })}</div>
+                            </div>
+                        </div>
+                        <div class="testimonial-rating">
+                            ${Array.from({length: 5}, (_, i) => 
+                                `<i class="${i < testimonial.rating ? 'fas' : 'far'} fa-star" style="color: var(--secondary-gold);"></i>`
+                            ).join('')}
+                        </div>
+                        <p class="testimonial-text">${testimonial.text}</p>
+                    </div>
+                `).join('');
+                
+            } catch (error) {
+                console.error('Error loading testimonials:', error);
+                testimonialsContainer.innerHTML = `
+                    <div class="testimonial-error">
+                        <p>Testimoni sedang tidak dapat ditampilkan.</p>
+                    </div>
+                `;
+            }
+        }
+
+        // Cart functionality
+        function addToCart(productName, price, productId) {
+            try {
+                // Get existing cart or create new
+                let cart = JSON.parse(localStorage.getItem('makananWongSoloCart')) || [];
+                
+                // Check if product already in cart
+                const existingItem = cart.find(item => item.id === productId);
+                
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({
+                        id: productId,
+                        name: productName,
+                        price: price,
+                        quantity: 1,
+                        addedAt: new Date().toISOString()
+                    });
+                }
+                
+                // Save to localStorage
+                localStorage.setItem('makananWongSoloCart', JSON.stringify(cart));
+                
+                // Show success message
+                showToast(`${productName} ditambahkan ke keranjang!`);
+                
+                // Update cart counter
+                updateCartCounter();
+                
+            } catch (error) {
+                console.error('Error adding to cart:', error);
+                showToast('Gagal menambahkan ke keranjang', 'error');
+            }
+        }
+
+        // Toast notification
+        function showToast(message, type = 'success') {
+            const toast = document.createElement('div');
+            toast.className = `toast toast-${type}`;
+            toast.innerHTML = `
+                <div class="toast-content">
+                    <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
+                    <span>${message}</span>
+                </div>
+            `;
+            
+            toast.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#4CAF50' : '#f44336'};
+                color: white;
+                padding: 12px 24px;
+                border-radius: 4px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                z-index: 10000;
+                animation: slideIn 0.3s ease;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+            `;
+            
+            document.body.appendChild(toast);
+            
+            // Remove after 3 seconds
+            setTimeout(() => {
+                toast.style.animation = 'slideOut 0.3s ease';
+                setTimeout(() => {
+                    if (toast.parentElement) {
+                        toast.remove();
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // CSS for animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes slideOut {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+
+        // Add event listeners to order buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load testimonials
+            setTimeout(loadHomeTestimonials, 100);
+            
+            // Add click listeners to order buttons
+            document.querySelectorAll('.btn-order').forEach(button => {
+                button.addEventListener('click', function() {
+                    const product = this.dataset.product;
+                    const price = parseInt(this.dataset.price);
+                    const id = this.dataset.id;
+                    addToCart(product, price, id);
+                });
+            });
+        });
+
+        // Update cart counter
+        function updateCartCounter() {
+            const cartCounter = document.getElementById('cartCounter');
+            if (cartCounter) {
+                try {
+                    const cart = JSON.parse(localStorage.getItem('makananWongSoloCart')) || [];
+                    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                    const countElement = cartCounter.querySelector('.cart-count');
+                    if (countElement) {
+                        countElement.textContent = totalItems;
+                        countElement.style.display = totalItems > 0 ? 'flex' : 'none';
+                    }
+                } catch (error) {
+                    console.error('Error updating cart counter:', error);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

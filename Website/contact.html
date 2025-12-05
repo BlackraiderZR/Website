@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontak & Profil Developer - Makanan Wong Solo">
+    <meta name="keywords" content="kontak, alamat, developer, programmer, alwanu zaky raihan">
+    <meta name="author" content="ALWANU ZAKY RAIHAN">
+    
+    <title>Contact - Makanan Wong Solo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+    <!-- Batik Background Pattern -->
+    <div class="batik-pattern"></div>
+    
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- WhatsApp Bubble -->
+    <div class="wa-bubble">
+        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+           target="_blank" 
+           class="wa-link"
+           aria-label="Hubungi via WhatsApp">
+            <div class="wa-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="wa-tooltip">
+                Tanya via WhatsApp
+            </div>
+        </a>
+    </div>
+    
+    <!-- Header -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper">
+            <!-- Logo -->
+            <div class="logo-section">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Makanan</span>
+                        <span class="logo-subtitle">Wong Solo</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="nav-link active">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Cart Counter -->
+            <div class="cart-counter" id="cartCounter">
+                <a href="pesanan.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Makanan Wong Solo</span>
+                </div>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="mobile-nav-link">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="mobile-nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="mobile-nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="mobile-nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link active">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Contact Hero -->
+        <section class="contact-hero-section section-padding">
+            <div class="container">
+                <div class="contact-hero-content">
+                    <div class="hero-breadcrumb">
+                        <a href="index.html">Beranda</a>
+                        <i class="fas fa-chevron-right"></i>
+                        <span>Contact</span>
+                    </div>
+                    <h1 class="contact-hero-title">
+                        <span class="text-primary">Hubungi</span><br>
+                        <span class="text-gold">Kami</span>
+                    </h1>
+                    <p class="contact-hero-description">
+                        Hubungi kami untuk informasi lebih lanjut, pemesanan, atau kolaborasi. 
+                        Kami siap membantu Anda menikmati kelezatan makanan tradisional Solo.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Developer Profile -->
+        <section class="developer-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Profil Developer</h2>
+                    <p class="section-subtitle">Pengembang website Makanan Wong Solo</p>
+                </div>
+                
+                <div class="developer-profile">
+                    <div class="developer-card">
+                        <div class="developer-avatar">
+                            <img src="https://ui-avatars.com/api/?name=ALWANU+ZAKY+RAIHAN&background=B71C1C&color=fff&size=400&bold=true&font-size=0.5" 
+                                 alt="ALWANU ZAKY RAIHAN" loading="lazy" class="avatar-image">
+                            <div class="avatar-frame"></div>
+                        </div>
+                        
+                        <div class="developer-info">
+                            <div class="developer-badge">
+                                <i class="fas fa-code"></i>
+                                <span>Web Developer</span>
+                            </div>
+                            
+                            <h2 class="developer-name">ALWANU ZAKY RAIHAN</h2>
+                            <p class="developer-title">Full Stack Developer & UI/UX Designer</p>
+                            
+                            <div class="developer-bio">
+                                <p>
+                                    Siswa SMKN 9 Surakarta Jurusan TJKT (Teknik Jaringan Komputer Telekomunikasi) 
+                                    dengan passion di bidang web development dan design. Membangun website 
+                                    Makanan Wong Solo sebagai bagian dari pembelajaran dan dedikasi untuk 
+                                    melestarikan budaya kuliner Solo.
+                                </p>
+                            </div>
+                            
+                            <div class="developer-skills">
+                                <h3><i class="fas fa-tools"></i> Keahlian Teknis</h3>
+                                <div class="skills-grid">
+                                    <div class="skill-item">
+                                        <span class="skill-name">HTML5</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">CSS3</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">JavaScript</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill-item">
+                                        <span class="skill-name">UI/UX Design</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="developer-contact-info">
+                                <h3><i class="fas fa-address-card"></i> Kontak Developer</h3>
+                                <div class="contact-list">
+                                    <div class="contact-item">
+                                        <i class="fas fa-envelope"></i>
+                                        <div class="contact-details">
+                                            <span class="contact-label">Email</span>
+                                            <a href="mailto:alwanu.zaky@example.com" class="contact-value">alwanu.zaky@example.com</a>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-graduation-cap"></i>
+                                        <div class="contact-details">
+                                            <span class="contact-label">Pendidikan</span>
+                                            <span class="contact-value">SMKN 9 Surakarta - TJKT</span>
+                                        </div>
+                                    </div>
+                                    <div class="contact-item">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="contact-details">
+                                            <span class="contact-label">Lokasi</span>
+                                            <span class="contact-value">Surakarta, Jawa Tengah</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="developer-social">
+                                <a href="#" class="social-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="#" class="social-link" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" title="Portfolio">
+                                    <i class="fas fa-briefcase"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3><i class="fas fa-info-circle"></i> Tentang Proyek Ini</h3>
+                        <div class="project-details">
+                            <div class="project-detail">
+                                <i class="fas fa-calendar-alt"></i>
+                                <div>
+                                    <span class="detail-label">Dibuat</span>
+                                    <span class="detail-value">Desember 2025</span>
+                                </div>
+                            </div>
+                            <div class="project-detail">
+                                <i class="fas fa-code-branch"></i>
+                                <div>
+                                    <span class="detail-label">Teknologi</span>
+                                    <span class="detail-value">HTML, CSS, JavaScript</span>
+                                </div>
+                            </div>
+                            <div class="project-detail">
+                                <i class="fas fa-tasks"></i>
+                                <div>
+                                    <span class="detail-label">Status</span>
+                                    <span class="detail-value">Production Ready</span>
+                                </div>
+                            </div>
+                            <div class="project-detail">
+                                <i class="fas fa-file-code"></i>
+                                <div>
+                                    <span class="detail-label">Lines of Code</span>
+                                    <span class="detail-value">8500+ lines</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-features">
+                            <h4>Fitur Utama yang Dikembangkan:</h4>
+                            <ul>
+                                <li>Responsive Design untuk semua device</li>
+                                <li>Sistem keranjang belanja dengan LocalStorage</li>
+                                <li>Sistem testimoni dengan rating bintang</li>
+                                <li>Integrasi WhatsApp Business API</li>
+                                <li>Artikel dinamis tentang kuliner Solo</li>
+                                <li>Checkout system dengan order tracking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Information -->
+        <section class="contact-info-section bg-light section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Informasi Kontak</h2>
+                    <p class="section-subtitle">Hubungi Makanan Wong Solo melalui berbagai channel</p>
+                </div>
+                
+                <div class="contact-grid">
+                    <!-- Contact Card 1 - WhatsApp -->
+                    <div class="contact-card whatsapp">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3 class="contact-title">WhatsApp Business</h3>
+                        <p class="contact-description">
+                            Hubungi kami via WhatsApp untuk pemesanan cepat, konsultasi menu, atau pertanyaan lainnya.
+                        </p>
+                        <div class="contact-detail">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 895-1343-9235</span>
+                        </div>
+                        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+                           target="_blank" class="btn btn-whatsapp">
+                            <i class="fab fa-whatsapp"></i>
+                            Chat via WhatsApp
+                        </a>
+                    </div>
+                    
+                    <!-- Contact Card 2 - Email -->
+                    <div class="contact-card email">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="contact-title">Email Resmi</h3>
+                        <p class="contact-description">
+                            Kirim email untuk pertanyaan detail, kerjasama, atau feedback mengenai layanan kami.
+                        </p>
+                        <div class="contact-detail">
+                            <i class="fas fa-at"></i>
+                            <span>makananwongsolo@gmail.com</span>
+                        </div>
+                        <a href="mailto:makananwongsolo@gmail.com" class="btn btn-email">
+                            <i class="fas fa-paper-plane"></i>
+                            Kirim Email
+                        </a>
+                    </div>
+                    
+                    <!-- Contact Card 3 - Instagram -->
+                    <div class="contact-card instagram">
+                        <div class="contact-icon">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h3 class="contact-title">Instagram</h3>
+                        <p class="contact-description">
+                            Ikuti kami di Instagram untuk update menu terbaru, promo, dan konten tentang kuliner Solo.
+                        </p>
+                        <div class="contact-detail">
+                            <i class="fab fa-instagram"></i>
+                            <span>@makananwongsolo</span>
+                        </div>
+                        <a href="https://instagram.com/makananwongsolo" target="_blank" class="btn btn-instagram">
+                            <i class="fab fa-instagram"></i>
+                            Kunjungi Instagram
+                        </a>
+                    </div>
+                    
+                    <!-- Contact Card 4 - Location -->
+                    <div class="contact-card location">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3 class="contact-title">Lokasi Toko</h3>
+                        <p class="contact-description">
+                            Kunjungi toko kami untuk menikmati makanan langsung atau mengambil pesanan secara langsung.
+                        </p>
+                        <div class="contact-detail">
+                            <i class="fas fa-store"></i>
+                            <span>Makanan Wong Solo</span>
+                        </div>
+                        <button class="btn btn-location" id="openMap">
+                            <i class="fas fa-directions"></i>
+                            Lihat di Google Maps
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Information -->
+        <section class="store-info-section section-padding">
+            <div class="container">
+                <div class="store-info-content">
+                    <div class="store-details">
+                        <h2 class="store-title">Detail Toko</h2>
+                        
+                        <div class="detail-group">
+                            <h3><i class="fas fa-store-alt"></i> Informasi Toko</h3>
+                            <div class="detail-item">
+                                <span class="detail-label">Nama Toko</span>
+                                <span class="detail-value">Makanan Wong Solo</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Tahun Berdiri</span>
+                                <span class="detail-value">1995 (28+ tahun)</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Spesialisasi</span>
+                                <span class="detail-value">Makanan Tradisional Solo</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Slogan</span>
+                                <span class="detail-value">"Cita Rasa Autentik Warisan Keraton Surakarta"</span>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-group">
+                            <h3><i class="fas fa-map-marked-alt"></i> Alamat Lengkap</h3>
+                            <div class="address-box">
+                                <i class="fas fa-map-pin"></i>
+                                <p>
+                                    Jl. Yos Sudarso, Gawanan<br>
+                                    Kec. Colomadu<br>
+                                    Kab. Karanganyar<br>
+                                    Jawa Tengah 57175<br>
+                                    Indonesia
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="detail-group">
+                            <h3><i class="fas fa-clock"></i> Jam Operasional</h3>
+                            <div class="hours-grid">
+                                <div class="hour-item">
+                                    <span class="day">Senin - Kamis</span>
+                                    <span class="time">08:00 - 16:00 WIB</span>
+                                </div>
+                                <div class="hour-item">
+                                    <span class="day">Jum'at</span>
+                                    <span class="time">10:00 - 16:00 WIB</span>
+                                </div>
+                                <div class="hour-item">
+                                    <span class="day">Sabtu - Minggu</span>
+                                    <span class="time">10:00 - 16:00 WIB</span>
+                                </div>
+                                <div class="hour-item">
+                                    <span class="day">Hari Libur Nasional</span>
+                                    <span class="time">10:00 - 16:00 WIB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="store-map" id="storeMap">
+                        <div class="map-placeholder">
+                            <i class="fas fa-map"></i>
+                            <h3>Lokasi Toko</h3>
+                            <p>Jl. Yos Sudarso, Gawanan, Colomadu, Karanganyar</p>
+                            <div class="map-coordinates">
+                                <span><i class="fas fa-location-arrow"></i> -7.550676, 110.828316</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section bg-light section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Pertanyaan Umum (FAQ)</h2>
+                    <p class="section-subtitle">Temukan jawaban untuk pertanyaan yang sering diajukan</p>
+                </div>
+                
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Bagaimana cara memesan makanan?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Anda bisa memesan melalui:</p>
+                            <ol>
+                                <li>Website ini: Pilih menu di halaman "Produk", tambah ke keranjang, lalu checkout</li>
+                                <li>WhatsApp: Langsung chat ke +62 895-1343-9235</li>
+                                <li>Datang langsung ke toko kami</li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Berapa lama waktu pengiriman?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Waktu pengiriman tergantung lokasi:</p>
+                            <ul>
+                                <li>Dalam kota Solo: 30-45 menit</li>
+                                <li>Sekitar Solo: 45-60 menit</li>
+                                <li>Luar kota: 1-2 jam (tergantung jarak)</li>
+                            </ul>
+                            <p>Untuk pengiriman jarak jauh, silakan hubungi kami terlebih dahulu.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Apakah tersedia pengiriman antar kota?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ya, kami melayani pengiriman antar kota dengan ketentuan:</p>
+                            <ul>
+                                <li>Minimal pemesanan Rp 200.000</li>
+                                <li>Biaya pengiriman disesuaikan dengan jarak</li>
+                                <li>Pengiriman menggunakan kurir khusus makanan</li>
+                                <li>Harap pesan minimal 1 hari sebelumnya</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Bagaimana cara pembayaran?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Kami menerima berbagai metode pembayaran:</p>
+                            <ul>
+                                <li>Tunai saat pengantaran (COD)</li>
+                                <li>Transfer bank (BCA, Mandiri, BRI)</li>
+                                <li>E-money (OVO, GoPay, Dana)</li>
+                                <li>QRIS (semua e-wallet)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Apakah ada catering untuk acara?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Ya, kami menyediakan layanan catering untuk:</p>
+                            <ul>
+                                <li>Acara keluarga (ulang tahun, reunian)</li>
+                                <li>Acara kantor (meeting, training)</li>
+                                <li>Pernikahan adat Jawa</li>
+                                <li>Acara adat dan tradisional</li>
+                            </ul>
+                            <p>Untuk catering, harap hubungi kami minimal 3 hari sebelumnya.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="faq-cta">
+                    <p>Masih punya pertanyaan? Jangan ragu untuk menghubungi kami!</p>
+                    <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+punya+pertanyaan+tentang%3A+...&type=phone_number&app_absent=0" 
+                       target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i>
+                        Tanya via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form-section section-padding">
+            <div class="container">
+                <div class="contact-form-wrapper">
+                    <div class="form-intro">
+                        <h2 class="form-title">Kirim Pesan kepada Kami</h2>
+                        <p class="form-description">
+                            Punya pertanyaan, saran, atau ingin bekerja sama? Isi form di samping dan kami akan 
+                            menghubungi Anda secepatnya.
+                        </p>
+                        
+                        <div class="form-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-reply"></i>
+                                <div>
+                                    <h4>Respon Cepat</h4>
+                                    <p>Kami akan membalas dalam 1x24 jam</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-user-check"></i>
+                                <div>
+                                    <h4>Personal Service</h4>
+                                    <p>Ditangani langsung oleh tim kami</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-lock"></i>
+                                <div>
+                                    <h4>Privasi Terjaga</h4>
+                                    <p>Data Anda aman bersama kami</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactName">
+                                <i class="fas fa-user"></i>
+                                Nama Lengkap
+                            </label>
+                            <input type="text" id="contactName" placeholder="Masukkan nama lengkap" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">
+                                <i class="fas fa-envelope"></i>
+                                Alamat Email
+                            </label>
+                            <input type="email" id="contactEmail" placeholder="email@contoh.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactPhone">
+                                <i class="fas fa-phone"></i>
+                                Nomor WhatsApp
+                            </label>
+                            <input type="tel" id="contactPhone" placeholder="081234567890" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactSubject">
+                                <i class="fas fa-tag"></i>
+                                Subjek Pesan
+                            </label>
+                            <select id="contactSubject" required>
+                                <option value="">Pilih subjek...</option>
+                                <option value="pemesanan">Pemesanan Makanan</option>
+                                <option value="catering">Catering Acara</option>
+                                <option value="kerjasama">Penawaran Kerjasama</option>
+                                <option value="keluhan">Keluhan/Saran</option>
+                                <option value="lainnya">Lainnya</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">
+                                <i class="fas fa-comment"></i>
+                                Pesan Anda
+                            </label>
+                            <textarea id="contactMessage" rows="5" placeholder="Tulis pesan Anda di sini..." required></textarea>
+                            <div class="char-counter">
+                                <span id="contactCharCount">0</span>/1000 karakter
+                            </div>
+                        </div>
+                        
+                        <div class="form-checkbox">
+                            <input type="checkbox" id="contactAgree" required>
+                            <label for="contactAgree">
+                                Saya setuju data saya digunakan untuk keperluan komunikasi
+                            </label>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="reset" class="btn btn-outline">
+                                <i class="fas fa-redo"></i>
+                                Reset Form
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Kirim Pesan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Success Modal -->
+        <div class="contact-success-modal" id="contactSuccessModal">
+            <div class="modal-overlay" id="contactModalOverlay"></div>
+            <div class="modal-content">
+                <div class="modal-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3 class="modal-title">Pesan Terkirim!</h3>
+                <p class="modal-message" id="contactSuccessMessage">
+                    Terima kasih telah menghubungi kami. Kami akan membalas pesan Anda secepatnya melalui email atau WhatsApp.
+                </p>
+                <div class="modal-actions">
+                    <button class="btn btn-primary" id="closeContactModal">
+                        <i class="fas fa-check"></i>
+                        Oke
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer-section bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Makanan</span>
+                            <span class="logo-subtitle">Wong Solo</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Melestarikan cita rasa autentik makanan tradisional Surakarta sejak 1995. 
+                        Warisan kuliner keluarga Keraton Surakarta.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+                           target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/makananwongsolo" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:makananwongsolo@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Kontak Kami</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>WhatsApp: +62 895-1343-9235</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram: @makananwongsolo</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: makananwongsolo@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-address">
+                    <h3 class="footer-title">Alamat</h3>
+                    <div class="address-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Yos Sudarso, Gawanan,<br>
+                           Kec. Colomadu,<br>
+                           Kab. Karanganyar,<br>
+                           Jawa Tengah 57175</p>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h3 class="footer-title">Jam Buka</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span>Senin - Kamis</span>
+                            <span>08:00 - 16:00 WIB</span>
+                        </li>
+                        <li>
+                            <span>Jum'at - Minggu/Hari Libur</span>
+                            <span>10:00 - 16:00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Makanan Wong Solo. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="produk.html">Produk</a>
+                    <a href="pesanan.html">Pesanan</a>
+                    <a href="maosan.html">Maosan</a>
+                    <a href="testimoni.html">Testimoni</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Files -->
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+    
+    <!-- Inline script untuk contact.html -->
+    <script>
+        // Initialize contact page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Setup FAQ accordion
+            setupFAQAccordion();
+            
+            // Setup contact form
+            setupContactForm();
+            
+            // Setup character counter
+            setupContactCharCounter();
+            
+            // Setup map button
+            setupMapButton();
+            
+            // Setup success modal
+            setupContactSuccessModal();
+            
+            // Update cart counter
+            updateCartCounter();
+        });
+
+        // Setup FAQ accordion
+        function setupFAQAccordion() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    // Toggle active class on question
+                    this.classList.toggle('active');
+                    
+                    // Toggle answer visibility
+                    const answer = this.nextElementSibling;
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        answer.style.paddingTop = '0';
+                        answer.style.paddingBottom = '0';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        answer.style.paddingTop = '1rem';
+                        answer.style.paddingBottom = '1rem';
+                    }
+                    
+                    // Rotate icon
+                    const icon = this.querySelector('i');
+                    icon.classList.toggle('fa-chevron-down');
+                    icon.classList.toggle('fa-chevron-up');
+                });
+            });
+        }
+
+        // Setup contact form
+        function setupContactForm() {
+            const form = document.getElementById('contactForm');
+            const resetBtn = form.querySelector('button[type="reset"]');
+            
+            if (form) {
+                form.addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    submitContactForm();
+                });
+            }
+            
+            if (resetBtn) {
+                resetBtn.addEventListener('click', function() {
+                    resetContactForm();
+                });
+            }
+        }
+
+        // Setup character counter
+        function setupContactCharCounter() {
+            const textarea = document.getElementById('contactMessage');
+            const charCount = document.getElementById('contactCharCount');
+            
+            if (textarea && charCount) {
+                textarea.addEventListener('input', function() {
+                    const count = this.value.length;
+                    charCount.textContent = count;
+                    
+                    if (count > 1000) {
+                        charCount.style.color = 'var(--primary-red)';
+                        this.style.borderColor = 'var(--primary-red)';
+                    } else {
+                        charCount.style.color = 'var(--text-light)';
+                        this.style.borderColor = 'var(--gray-light)';
+                    }
+                });
+            }
+        }
+
+        // Setup map button
+        function setupMapButton() {
+            const mapBtn = document.getElementById('openMap');
+            
+            if (mapBtn) {
+                mapBtn.addEventListener('click', function() {
+                    // Coordinates for the store location
+                    const lat = -7.550676;
+                    const lng = 110.828316;
+                    const label = 'Makanan Wong Solo';
+                    const url = `https://maps.app.goo.gl/d9XvGzsjYETWbcLF7`;
+                    
+                    window.open(url, '_blank');
+                });
+            }
+        }
+
+        // Setup success modal
+        function setupContactSuccessModal() {
+            const overlay = document.getElementById('contactModalOverlay');
+            const closeBtn = document.getElementById('closeContactModal');
+            const modal = document.getElementById('contactSuccessModal');
+            
+            if (overlay) {
+                overlay.addEventListener('click', closeContactSuccessModal);
+            }
+            
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeContactSuccessModal);
+            }
+        }
+
+        // Submit contact form
+        function submitContactForm() {
+            const name = document.getElementById('contactName').value.trim();
+            const email = document.getElementById('contactEmail').value.trim();
+            const phone = document.getElementById('contactPhone').value.trim();
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value.trim();
+            
+            // Validation
+            if (!name || !email || !phone || !subject || !message) {
+                showNotification('Harap isi semua field yang wajib diisi', 'error');
+                return;
+            }
+            
+            if (message.length > 1000) {
+                showNotification('Pesan maksimal 1000 karakter', 'error');
+                return;
+            }
+            
+            // Validate email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                showNotification('Format email tidak valid', 'error');
+                return;
+            }
+            
+            // Validate phone number (simple validation)
+            const phoneRegex = /^[0-9]{10,13}$/;
+            if (!phoneRegex.test(phone.replace(/[^0-9]/g, ''))) {
+                showNotification('Format nomor telepon tidak valid', 'error');
+                return;
+            }
+            
+            // Create WhatsApp message
+            const whatsappMessage = `*Pesan dari Website Makanan Wong Solo*
+            
+*Nama:* ${name}
+*Email:* ${email}
+*WhatsApp:* ${phone}
+*Subjek:* ${getSubjectName(subject)}
+
+*Pesan:*
+${message}
+
+---
+Pesan dikirim melalui website Makanan Wong Solo`;
+
+            // Encode for WhatsApp URL
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://api.whatsapp.com/send/?phone=6289513439235&text=${encodedMessage}&type=phone_number&app_absent=0`;
+            
+            // Open WhatsApp
+            window.open(whatsappUrl, '_blank');
+            
+            // Show success message
+            showContactSuccessModal(`Pesan Anda telah dikirim ke WhatsApp kami. Kami akan membalas secepatnya.`);
+            
+            // Reset form
+            resetContactForm();
+            
+            // Show notification
+            showNotification('Pesan berhasil dikirim!', 'success');
+        }
+
+        // Reset contact form
+        function resetContactForm() {
+            document.getElementById('contactForm').reset();
+            document.getElementById('contactCharCount').textContent = '0';
+            
+            // Reset textarea border
+            const textarea = document.getElementById('contactMessage');
+            if (textarea) {
+                textarea.style.borderColor = 'var(--gray-light)';
+            }
+        }
+
+        // Show contact success modal
+        function showContactSuccessModal(message) {
+            const modal = document.getElementById('contactSuccessModal');
+            const messageElem = document.getElementById('contactSuccessMessage');
+            
+            if (modal && messageElem) {
+                messageElem.textContent = message;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        // Close contact success modal
+        function closeContactSuccessModal() {
+            const modal = document.getElementById('contactSuccessModal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Helper functions
+        function getSubjectName(subjectValue) {
+            const subjects = {
+                'pemesanan': 'Pemesanan Makanan',
+                'catering': 'Catering Acara',
+                'kerjasama': 'Penawaran Kerjasama',
+                'keluhan': 'Keluhan/Saran',
+                'lainnya': 'Lainnya'
+            };
+            return subjects[subjectValue] || subjectValue;
+        }
+
+        function showNotification(message, type = 'info') {
+            if (window.MakananWongSolo && window.MakananWongSolo.showNotification) {
+                window.MakananWongSolo.showNotification(message, type);
+            } else {
+                alert(message);
+            }
+        }
+
+        function updateCartCounter() {
+            const cartCounter = document.getElementById('cartCounter');
+            if (cartCounter) {
+                try {
+                    const cart = JSON.parse(localStorage.getItem('makananWongSoloCart')) || [];
+                    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                    const countElement = cartCounter.querySelector('.cart-count');
+                    if (countElement) {
+                        countElement.textContent = totalItems;
+                        countElement.style.display = totalItems > 0 ? 'flex' : 'none';
+                    }
+                } catch (error) {
+                    console.error('Error updating cart counter:', error);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

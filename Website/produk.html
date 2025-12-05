@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Produk Makanan Tradisional Solo - Makanan Wong Solo">
+    <meta name="keywords" content="nasi liwet, selat solo, timlo, serabi, brambang asem, jajanan solo, makanan tradisional">
+    <meta name="author" content="ALWANU ZAKY RAIHAN">
+    
+    <title>Produk - Makanan Wong Solo</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/icons/favicon.ico">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Utama -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/product.css">
+</head>
+<body>
+    <!-- Batik Background Pattern -->
+    <div class="batik-pattern"></div>
+    
+    <!-- Skip to Content -->
+    <a href="#main-content" class="skip-to-content">Skip to Content</a>
+    
+    <!-- Loading Spinner -->
+    <div id="loading-spinner" class="loading-spinner">
+        <div class="spinner"></div>
+    </div>
+    
+    <!-- WhatsApp Bubble -->
+    <div class="wa-bubble">
+        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+           target="_blank" 
+           class="wa-link"
+           aria-label="Hubungi via WhatsApp">
+            <div class="wa-icon">
+                <i class="fab fa-whatsapp"></i>
+            </div>
+            <div class="wa-tooltip">
+                Tanya via WhatsApp
+            </div>
+        </a>
+    </div>
+    
+    <!-- Header -->
+    <header class="navbar-container">
+        <div class="navbar-wrapper">
+            <!-- Logo -->
+            <div class="logo-section">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-title">Makanan</span>
+                        <span class="logo-subtitle">Wong Solo</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="nav-link active">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="nav-link">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Cart Counter -->
+            <div class="cart-counter" id="cartCounter">
+                <a href="pesanan.html">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span class="cart-count">0</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-logo">
+                    <i class="fas fa-utensils"></i>
+                    <span>Makanan Wong Solo</span>
+                </div>
+                <button class="mobile-menu-close" id="mobileMenuClose">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="mobile-nav-links">
+                <a href="index.html" class="mobile-nav-link">
+                    <i class="fas fa-home"></i>
+                    <span>Beranda</span>
+                </a>
+                <a href="produk.html" class="mobile-nav-link active">
+                    <i class="fas fa-utensils"></i>
+                    <span>Produk</span>
+                </a>
+                <a href="pesanan.html" class="mobile-nav-link">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span>Pesanan</span>
+                </a>
+                <a href="maosan.html" class="mobile-nav-link">
+                    <i class="fas fa-newspaper"></i>
+                    <span>Maosan</span>
+                </a>
+                <a href="testimoni.html" class="mobile-nav-link">
+                    <i class="fas fa-star"></i>
+                    <span>Testimoni</span>
+                </a>
+                <a href="contact.html" class="mobile-nav-link">
+                    <i class="fas fa-address-book"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Products Hero -->
+        <section class="products-hero-section section-padding">
+            <div class="container">
+                <div class="products-hero-content">
+                    <h1 class="products-hero-title">
+                        <span class="text-primary">Menu Lengkap</span><br>
+                        <span class="text-gold">Makanan Tradisional Solo</span>
+                    </h1>
+                    <p class="products-hero-description">
+                        Jelajahi kekayaan kuliner Kota Solo melalui menu-menu autentik warisan budaya Jawa. 
+                        Setiap hidangan memiliki cerita dan filosofi yang mendalam.
+                    </p>
+                    
+                    <!-- Product Categories -->
+                    <div class="product-categories">
+                        <button class="category-btn active" data-category="all">
+                            <i class="fas fa-utensils"></i>
+                            Semua Menu
+                        </button>
+                        <button class="category-btn" data-category="makanan-utama">
+                            <i class="fas fa-drumstick-bite"></i>
+                            Makanan Utama
+                        </button>
+                        <button class="category-btn" data-category="jajanan">
+                            <i class="fas fa-cookie-bite"></i>
+                            Jajanan & Camilan
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Products Grid -->
+        <section class="products-section section-padding">
+            <div class="container">
+                <!-- Products Filter -->
+                <div class="products-filter">
+                    <div class="filter-search">
+                        <div class="search-box">
+                            <i class="fas fa-search"></i>
+                            <input type="text" id="productSearch" placeholder="Cari makanan...">
+                        </div>
+                    </div>
+                    <div class="filter-sort">
+                        <select id="sortProducts">
+                            <option value="default">Urutkan: Default</option>
+                            <option value="name-asc">Nama: A-Z</option>
+                            <option value="name-desc">Nama: Z-A</option>
+                            <option value="price-asc">Harga: Terendah</option>
+                            <option value="price-desc">Harga: Tertinggi</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <!-- Products Container -->
+                <div class="products-container" id="productsContainer">
+                    <!-- Products will be loaded via JavaScript -->
+                </div>
+
+                <!-- Product Detail Modal -->
+                <div class="product-modal" id="productModal">
+                    <div class="modal-overlay" id="modalOverlay"></div>
+                    <div class="modal-content">
+                        <button class="modal-close" id="modalClose">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <div class="modal-body" id="modalBody">
+                            <!-- Modal content will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Order Section -->
+        <section class="order-guide-section bg-light section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Cara Memesan</h2>
+                    <p class="section-subtitle">Langkah mudah untuk menikmati kelezatan Solo</p>
+                </div>
+                
+                <div class="order-steps">
+                    <div class="order-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Pilih Menu</h3>
+                            <p>Telusuri menu kami dan pilih makanan favorit Anda</p>
+                        </div>
+                    </div>
+                    <div class="order-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Tambah ke Keranjang</h3>
+                            <p>Klik tombol "Pesan" untuk menambahkan ke keranjang</p>
+                        </div>
+                    </div>
+                    <div class="order-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Checkout</h3>
+                            <p>Periksa pesanan di halaman "Pesanan" dan selesaikan pembelian</p>
+                        </div>
+                    </div>
+                    <div class="order-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Konfirmasi via WhatsApp</h3>
+                            <p>Pesanan akan dikirimkan via WhatsApp untuk konfirmasi</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Categories Info -->
+        <section class="categories-info-section section-padding">
+            <div class="container">
+                <div class="categories-grid">
+                    <div class="category-info">
+                        <div class="category-icon">
+                            <i class="fas fa-drumstick-bite"></i>
+                        </div>
+                        <h3>Makanan Utama</h3>
+                        <p>Hidangan lengkap khas Solo yang biasanya disajikan sebagai menu utama dengan cita rasa khas dan penyajian tradisional.</p>
+                    </div>
+                    <div class="category-info">
+                        <div class="category-icon">
+                            <i class="fas fa-cookie-bite"></i>
+                        </div>
+                        <h3>Jajanan Tradisional</h3>
+                        <p>Kudapan dan camilan khas Solo yang biasa dinikmati di sela waktu atau sebagai teman minum teh/kopi.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer-section bg-dark">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-title">Makanan</span>
+                            <span class="logo-subtitle">Wong Solo</span>
+                        </div>
+                    </div>
+                    <p class="footer-description">
+                        Melestarikan cita rasa autentik makanan tradisional Surakarta sejak 1995. 
+                        Warisan kuliner keluarga Keraton Surakarta.
+                    </p>
+                    <div class="footer-social">
+                        <a href="https://api.whatsapp.com/send/?phone=6289513439235&text=Halo%2C+saya+ingin+bertanya+tentang%3A+...&type=phone_number&app_absent=0" 
+                           target="_blank" class="social-link">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://instagram.com/makananwongsolo" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="mailto:makananwongsolo@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <h3 class="footer-title">Kontak Kami</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>WhatsApp: +62 895-1343-9235</span>
+                        </li>
+                        <li>
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram: @makananwongsolo</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>Email: makananwongsolo@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-address">
+                    <h3 class="footer-title">Alamat</h3>
+                    <div class="address-content">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Jl. Yos Sudarso, Gawanan,<br>
+                           Kec. Colomadu,<br>
+                           Kab. Karanganyar,<br>
+                           Jawa Tengah 57175</p>
+                    </div>
+                </div>
+
+                <div class="footer-hours">
+                    <h3 class="footer-title">Jam Buka</h3>
+                    <ul class="hours-list">
+                        <li>
+                            <span>Senin - Kamis</span>
+                            <span>08:00 - 16:00 WIB</span>
+                        </li>
+                        <li>
+                            <span>Jum'at - Minggu/Hari Libur</span>
+                            <span>10:00 - 16:00 WIB</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="copyright">
+                    &copy; 2025 Makanan Wong Solo. All rights reserved.
+                </div>
+                <div class="footer-links">
+                    <a href="index.html">Beranda</a>
+                    <a href="produk.html">Produk</a>
+                    <a href="pesanan.html">Pesanan</a>
+                    <a href="maosan.html">Maosan</a>
+                    <a href="testimoni.html">Testimoni</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- JavaScript Files -->
+    <script src="assets/js/include.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/products.js"></script>
+    
+    <!-- Inline script untuk produk.html -->
+    <script>
+        // Product data
+        const productsData = [
+            // Makanan Utama
+            {
+                id: "nasi-liwet",
+                name: "Nasi Liwet Solo",
+                category: "makanan-utama",
+                price: 35000,
+                rating: 4.9,
+                reviewCount: 1280,
+                image: "gambar/liwet.jpeg",
+                description: "Nasi dimasak dengan santan dan rempah-rempah khas Solo, disajikan dengan lauk pelengkap autentik seperti ayam, telur, dan areh.",
+                details: `
+                    <h2>Nasi Liwet Solo</h2>
+                    <div class="product-detail-content">
+                        <div class="detail-image">
+                            <img src="gambar/liwet.jpeg" alt="Nasi Liwet Solo">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-price">
+                                <span class="price">Rp 35.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.9 (1280 reviews)
+                                </span>
+                            </div>
+                            <p><strong>Nasi Liwet Solo</strong> adalah hidangan ikonik Kota Solo yang memiliki sejarah panjang dalam budaya Jawa. Nasi dimasak dengan santan kelapa pilihan dan rempah-rempah khas seperti serai, daun salam, dan lengkuas.</p>
+                            
+                            <h3>Komposisi:</h3>
+                            <ul>
+                                <li>Nasi liwet dengan santan pilihan</li>
+                                <li>Ayam kampung ungkep</li>
+                                <li>Telur pindang</li>
+                                <li>Areh (santan kental)</li>
+                                <li>Labu siam</li>
+                                <li>Sambal terasi</li>
+                                <li>Kerupuk rambak</li>
+                            </ul>
+                            
+                            <h3>Sejarah Singkat:</h3>
+                            <p>Nasi Liwet awalnya adalah hidangan sederhana masyarakat Jawa yang kemudian diadopsi oleh Keraton Surakarta dan disempurnakan dengan rempah-rempah khusus.</p>
+                            
+                            <h3>Cara Penyajian:</h3>
+                            <p>Disajikan dalam kendil (periuk tanah liat) tradisional untuk menjaga kehangatan dan aroma. Biasanya dinikmati bersama keluarga besar.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "selat-solo",
+                name: "Selat Solo",
+                category: "makanan-utama",
+                price: 45000,
+                rating: 4.8,
+                reviewCount: 950,
+                image: "gambar/selat.jpeg",
+                description: "Hidangan istimewa dengan daging sapi pilihan, saus spesial, dan sayuran segar yang disusun dengan rapi.",
+                details: `
+                    <h2>Selat Solo</h2>
+                    <div class="product-detail-content">
+                        <div class="detail-image">
+                            <img src="gambar/selat.jpeg" alt="Selat Solo">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-price">
+                                <span class="price">Rp 45.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.8 (950 reviews)
+                                </span>
+                            </div>
+                            <p><strong>Selat Solo</strong> adalah hidangan fusion yang terinspirasi dari steak ala Eropa dengan sentuhan Jawa. Hidangan ini sangat populer di kalangan bangsawan Keraton Surakarta.</p>
+                            
+                            <h3>Komposisi:</h3>
+                            <ul>
+                                <li>Daging sapi pilihan (tenderloin)</li>
+                                <li>Saus spesial dengan rempah Jawa</li>
+                                <li>Kentang goreng</li>
+                                <li>Sayuran segar (buncis, wortel, selada)</li>
+                                <li>Telur rebus</li>
+                                <li>Acar ketimun</li>
+                                <li>Kerupuk mie</li>
+                            </ul>
+                            
+                            <h3>Sejarah Singkat:</h3>
+                            <p>Selat Solo tercipta pada masa penjajahan Belanda ketika koki Keraton mengadaptasi hidangan Eropa dengan cita rasa Jawa. Nama "selat" berasal dari kata "salad" yang disesuaikan dengan lidah Jawa.</p>
+                            
+                            <h3>Keunikan:</h3>
+                            <p>Saus spesial Selat Solo dibuat dari 15 jenis rempah rahasia yang diracik khusus oleh keluarga Keraton. Rasa manis, asam, dan gurih berpadu sempurna.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "timlo-solo",
+                name: "Timlo Solo",
+                category: "makanan-utama",
+                price: 30000,
+                rating: 4.7,
+                reviewCount: 850,
+                image: "gambar/timlo.jpeg",
+                description: "Sup tradisional Solo dengan potongan ayam, ati ampela, soun, dan telur puyuh dalam kaldu gurih.",
+                details: `
+                    <h2>Timlo Solo</h2>
+                    <div class="product-detail-content">
+                        <div class="detail-image">
+                            <img src="gambar/timlo.jpeg" alt="Timlo Solo">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-price">
+                                <span class="price">Rp 30.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.7 (850 reviews)
+                                </span>
+                            </div>
+                            <p><strong>Timlo Solo</strong> adalah sup tradisional yang sangat populer di Solo. Kuahnya yang bening namun kaya rasa membuat hidangan ini cocok dinikmati kapan saja.</p>
+                            
+                            <h3>Komposisi:</h3>
+                            <ul>
+                                <li>Kaldu ayam kampung</li>
+                                <li>Potongan daging ayam</li>
+                                <li>Ati ampela</li>
+                                <li>Soun (bihun)</li>
+                                <li>Telur puyuh</li>
+                                <li>Wortel dan buncis</li>
+                                <li>Bawang goreng</li>
+                                <li>Seledri dan daun bawang</li>
+                            </ul>
+                            
+                            <h3>Asal Usul:</h3>
+                            <p>Timlo berasal dari kata "timplo" dalam bahasa Jawa yang berarti "mencampur". Hidangan ini awalnya dibuat untuk kalangan menengah Solo yang menginginkan makanan bergizi dengan harga terjangkau.</p>
+                            
+                            <h3>Manfaat:</h3>
+                            <p>Kaya protein dari ayam dan telur, serta sayuran yang membuatnya menjadi hidangan sehat dan bergizi.</p>
+                        </div>
+                    </div>
+                `
+            },
+            
+            // Jajanan & Camilan
+            {
+                id: "serabi-solo",
+                name: "Serabi Solo",
+                category: "jajanan",
+                price: 25000,
+                rating: 4.7,
+                reviewCount: 2100,
+                image: "gambar/serabi.jpeg",
+                description: "Kue tradisional Solo dengan tekstur lembut, rasa manis gurih, dan taburan kelapa parut.",
+                details: `
+                    <h2>Serabi Solo</h2>
+                    <div class="product-detail-content">
+                        <div class="detail-image">
+                            <img src="gambar/serabi.jpeg" alt="Serabi Solo">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-price">
+                                <span class="price">Rp 25.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.7 (2100 reviews)
+                                </span>
+                            </div>
+                            <p><strong>Serabi Solo</strong> adalah kue tradisional yang menjadi ikon kuliner Solo. Berbeda dengan serabi lainnya, serabi Solo memiliki tekstur yang lebih lembut dan rasa yang khas.</p>
+                            
+                            <h3>Varian Rasa:</h3>
+                            <ul>
+                                <li>Serabi original dengan kelapa parut</li>
+                                <li>Serabi coklat</li>
+                                <li>Serabi keju</li>
+                                <li>Serabi pandan</li>
+                                <li>Serabi durian (musiman)</li>
+                            </ul>
+                            
+                            <h3>Proses Pembuatan:</h3>
+                            <p>Serabi Solo dibuat dengan cara tradisional menggunakan cetakan tanah liat kecil yang dipanaskan dengan arang. Proses ini memberikan aroma dan rasa khas yang tidak bisa didapatkan dengan cara modern.</p>
+                            
+                            <h3>Waktu Terbaik:</h3>
+                            <p>Serabi Solo paling enak dinikmati hangat-hangat di pagi hari sebagai sarapan atau sore hari sebagai teman minum teh.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "brambang-asem",
+                name: "Brambang Asem",
+                category: "jajanan",
+                price: 18000,
+                rating: 4.6,
+                reviewCount: 720,
+                image: "gambar/brambang.jpeg",
+                description: "Camilan gurih khas Solo dari singkong dengan bumbu bawang merah dan asam yang khas.",
+                details: `
+                    <h2>Brambang Asem</h2>
+                    <div class="product-detail-content">
+                        <div class="detail-image">
+                            <img src="gambar/brambang.jpeg" alt="Brambang Asem">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-price">
+                                <span class="price">Rp 18.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.6 (720 reviews)
+                                </span>
+                            </div>
+                            <p><strong>Brambang Asem</strong> adalah camilan tradisional Solo yang terbuat dari singkong dengan bumbu bawang merah (brambang) dan asam Jawa (asem).</p>
+                            
+                            <h3>Komposisi:</h3>
+                            <ul>
+                                <li>Singkong pilihan</li>
+                                <li>Bawang merah goreng</li>
+                                <li>Asam Jawa asli</li>
+                                <li>Cabai rawit (opsional)</li>
+                                <li>Garam dan gula merah</li>
+                            </ul>
+                            
+                            <h3>Ciri Khas:</h3>
+                            <p>Rasa gurih dari bawang merah, asam segar dari asam Jawa, dan manis dari gula merah berpadu sempurna dengan tekstur singkong yang renyah di luar namun lembut di dalam.</p>
+                            
+                            <h3>Sejarah:</h3>
+                            <p>Brambang Asem awalnya adalah camilan petani di daerah Solo yang memanfaatkan singkong hasil kebun. Seiring waktu, camilan ini menjadi populer di seluruh kalangan.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "jatah-blondo",
+                name: "Jatah Blondo",
+                category: "jajanan",
+                price: 15000,
+                rating: 4.5,
+                reviewCount: 520,
+                image: "gambar/blondo.jpeg",
+                description: "Kacang tanah goreng dengan bumbu kelapa khas Solo yang gurih dan renyah.",
+                details: `
+                    <h2>Jatah Blondo</h2>
+                    <div class="product-detail-content">
+                        <div class="detail-image">
+                            <img src="gambar/blondo.jpeg" alt="Jatah Blondo">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-price">
+                                <span class="price">Rp 15.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.5 (520 reviews)
+                                </span>
+                            </div>
+                            <p><strong>Jatah Blondo</strong> adalah camilan khas Solo berupa kacang tanah goreng dengan balutan kelapa parut dan bumbu rahasia.</p>
+                            
+                            <h3>Bahan Utama:</h3>
+                            <ul>
+                                <li>Kacang tanah pilihan</li>
+                                <li>Kelapa parut setengah tua</li>
+                                <li>Bumbu rahasia keluarga</li>
+                                <li>Gula aren</li>
+                                <li>Garam kasar</li>
+                            </ul>
+                            
+                            <h3>Proses Pembuatan:</h3>
+                            <p>Kacang tanah digoreng dengan teknik khusus agar tetap renyah. Kelapa parut diolah dengan bumbu rahasia kemudian dicampur dengan kacang. Proses ini membutuhkan keahlian khusus agar rasa seimbang.</p>
+                            
+                            <h3>Makna Nama:</h3>
+                            <p>"Jatah" berarti bagian atau porsi, sedangkan "Blondo" adalah sebutan untuk kelapa parut setengah tua. Nama ini mencerminkan bahwa kelapa adalah komponen utama dalam camilan ini.</p>
+                        </div>
+                    </div>
+                `
+            },
+            {
+                id: "cambuk-rambak",
+                name: "Cambuk Rambak",
+                category: "jajanan",
+                price: 20000,
+                rating: 4.8,
+                reviewCount: 430,
+                image: "gambar/cambuk.jpeg",
+                description: "Kerupuk kulit yang renyah dengan sambal kacang khas Solo, disajikan dengan lontong.",
+                details: `
+                    <h2>Cambuk Rambak</h2>
+                    <div class="product-detail-content">
+                        <div class="detail-image">
+                            <img src="gambar/cambuk.jpeg" alt="Cambuk Rambak">
+                        </div>
+                        <div class="detail-info">
+                            <div class="detail-price">
+                                <span class="price">Rp 20.000</span>
+                                <span class="rating">
+                                    <i class="fas fa-star"></i> 4.8 (430 reviews)
+                                </span>
+                            </div>
+                            <p><strong>Cambuk Rambak</strong> adalah hidangan unik Solo yang terdiri dari kerupuk kulit sapi dengan sambal kacang dan lontong.</p>
+                            
+                            <h3>Komponen Hidangan:</h3>
+                            <ul>
+                                <li>Kerupuk kulit sapi (rambak) pilihan</li>
+                                <li>Sambal kacang khas Solo</li>
+                                <li>Lontong/lupis</li>
+                                <li>Tauge dan kol</li>
+                                <li>Bawang goreng</li>
+                                <li>Seledri</li>
+                            </ul>
+                            
+                            <h3>Cara Menikmati:</h3>
+                            <p>Kerupuk rambak direndam sebentar dalam kuah sambal kacang hingga sedikit melunak namun tetap renyah. Disantap bersama lontong dan sayuran.</p>
+                            
+                            <h3>Asal Usul:</h3>
+                            <p>Nama "cambuk" berasal dari suara "cambuk" yang dihasilkan saat menggigit kerupuk. Hidangan ini awalnya populer di pasar-pasar tradisional Solo sebelum menjadi favorit semua kalangan.</p>
+                        </div>
+                    </div>
+                `
+            }
+        ];
+
+        // Initialize products page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Load products
+            renderProducts(productsData);
+            
+            // Setup category filters
+            setupCategoryFilters();
+            
+            // Setup search
+            setupSearch();
+            
+            // Setup sort
+            setupSort();
+            
+            // Setup modal
+            setupModal();
+            
+            // Update cart counter
+            if (window.MakananWongSolo && window.MakananWongSolo.updateCartCounter) {
+                window.MakananWongSolo.updateCartCounter();
+            }
+        });
+
+        // Render products
+        function renderProducts(products) {
+            const container = document.getElementById('productsContainer');
+            if (!container) return;
+            
+            container.innerHTML = products.map(product => `
+                <div class="product-card" data-category="${product.category}" data-name="${product.name.toLowerCase()}">
+                    <div class="product-image">
+                        <img src="${product.image}" alt="${product.name}" loading="lazy">
+                        <div class="product-badge">
+                            ${product.category === 'makanan-utama' ? 
+                                '<i class="fas fa-drumstick-bite"></i> Makanan Utama' : 
+                                '<i class="fas fa-cookie-bite"></i> Jajanan'}
+                        </div>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">${product.name}</h3>
+                        <p class="product-description">${product.description}</p>
+                        <div class="product-meta">
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <span>${product.rating} (${product.reviewCount})</span>
+                            </div>
+                            <div class="product-price">
+                                Rp ${product.price.toLocaleString('id-ID')}
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <button class="btn btn-outline btn-sm btn-detail" data-id="${product.id}">
+                                <i class="fas fa-info-circle"></i>
+                                Detail
+                            </button>
+                            <button class="btn btn-secondary btn-sm btn-add-to-cart" 
+                                    data-id="${product.id}"
+                                    data-name="${product.name}"
+                                    data-price="${product.price}">
+                                <i class="fas fa-cart-plus"></i>
+                                Pesan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+            
+            // Add event listeners
+            document.querySelectorAll('.btn-detail').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.dataset.id;
+                    showProductDetail(productId);
+                });
+            });
+            
+            document.querySelectorAll('.btn-add-to-cart').forEach(button => {
+                button.addEventListener('click', function() {
+                    const productId = this.dataset.id;
+                    const productName = this.dataset.name;
+                    const productPrice = parseInt(this.dataset.price);
+                    
+                    if (window.MakananWongSolo && window.MakananWongSolo.addProductToCart) {
+                        window.MakananWongSolo.addProductToCart(productId, productName, productPrice);
+                    } else {
+                        // Fallback
+                        const cart = JSON.parse(localStorage.getItem('makananWongSoloCart')) || [];
+                        const existingItem = cart.find(item => item.id === productId);
+                        
+                        if (existingItem) {
+                            existingItem.quantity += 1;
+                        } else {
+                            cart.push({
+                                id: productId,
+                                name: productName,
+                                price: productPrice,
+                                quantity: 1,
+                                addedAt: new Date().toISOString()
+                            });
+                        }
+                        
+                        localStorage.setItem('makananWongSoloCart', JSON.stringify(cart));
+                        
+                        // Show notification
+                        if (window.MakananWongSolo && window.MakananWongSolo.showNotification) {
+                            window.MakananWongSolo.showNotification(`${productName} ditambahkan ke keranjang!`, 'success');
+                        }
+                        
+                        // Update cart counter
+                        updateCartCounter();
+                    }
+                });
+            });
+        }
+
+        // Setup category filters
+        function setupCategoryFilters() {
+            const categoryButtons = document.querySelectorAll('.category-btn');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            categoryButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    categoryButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    this.classList.add('active');
+                    
+                    const category = this.dataset.category;
+                    
+                    // Filter products
+                    productCards.forEach(card => {
+                        if (category === 'all' || card.dataset.category === category) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        // Setup search
+        function setupSearch() {
+            const searchInput = document.getElementById('productSearch');
+            const productCards = document.querySelectorAll('.product-card');
+            
+            if (searchInput) {
+                searchInput.addEventListener('input', function() {
+                    const searchTerm = this.value.toLowerCase();
+                    
+                    productCards.forEach(card => {
+                        const productName = card.dataset.name;
+                        
+                        if (productName.includes(searchTerm)) {
+                            card.style.display = 'block';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            }
+        }
+
+        // Setup sort
+        function setupSort() {
+            const sortSelect = document.getElementById('sortProducts');
+            
+            if (sortSelect) {
+                sortSelect.addEventListener('change', function() {
+                    const sortValue = this.value;
+                    let sortedProducts = [...productsData];
+                    
+                    switch(sortValue) {
+                        case 'name-asc':
+                            sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
+                            break;
+                        case 'name-desc':
+                            sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
+                            break;
+                        case 'price-asc':
+                            sortedProducts.sort((a, b) => a.price - b.price);
+                            break;
+                        case 'price-desc':
+                            sortedProducts.sort((a, b) => b.price - a.price);
+                            break;
+                        default:
+                            // Default sorting
+                            break;
+                    }
+                    
+                    renderProducts(sortedProducts);
+                    setupCategoryFilters();
+                });
+            }
+        }
+
+        // Setup modal
+        function setupModal() {
+            const modal = document.getElementById('productModal');
+            const modalOverlay = document.getElementById('modalOverlay');
+            const modalClose = document.getElementById('modalClose');
+            
+            if (modalOverlay) {
+                modalOverlay.addEventListener('click', closeModal);
+            }
+            
+            if (modalClose) {
+                modalClose.addEventListener('click', closeModal);
+            }
+            
+            // Close modal with Escape key
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    closeModal();
+                }
+            });
+        }
+
+        // Show product detail in modal
+        function showProductDetail(productId) {
+            const product = productsData.find(p => p.id === productId);
+            const modalBody = document.getElementById('modalBody');
+            const modal = document.getElementById('productModal');
+            
+            if (!product || !modalBody || !modal) return;
+            
+            modalBody.innerHTML = `
+                ${product.details}
+                <div class="detail-actions">
+                    <button class="btn btn-primary btn-order-detail" 
+                            data-id="${product.id}"
+                            data-name="${product.name}"
+                            data-price="${product.price}">
+                        <i class="fas fa-cart-plus"></i>
+                        Pesan Sekarang
+                    </button>
+                    <button class="btn btn-outline" id="closeDetailBtn">
+                        <i class="fas fa-times"></i>
+                        Tutup
+                    </button>
+                </div>
+            `;
+            
+            // Show modal
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Add event listener to order button in modal
+            const orderButton = modalBody.querySelector('.btn-order-detail');
+            if (orderButton) {
+                orderButton.addEventListener('click', function() {
+                    const productId = this.dataset.id;
+                    const productName = this.dataset.name;
+                    const productPrice = parseInt(this.dataset.price);
+                    
+                    if (window.MakananWongSolo && window.MakananWongSolo.addProductToCart) {
+                        window.MakananWongSolo.addProductToCart(productId, productName, productPrice);
+                    }
+                    
+                    closeModal();
+                });
+            }
+            
+            // Add event listener to close button in modal
+            const closeBtn = modalBody.querySelector('#closeDetailBtn');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', closeModal);
+            }
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('productModal');
+            if (modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        // Update cart counter
+        function updateCartCounter() {
+            const cartCounter = document.getElementById('cartCounter');
+            if (cartCounter) {
+                try {
+                    const cart = JSON.parse(localStorage.getItem('makananWongSoloCart')) || [];
+                    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                    const countElement = cartCounter.querySelector('.cart-count');
+                    if (countElement) {
+                        countElement.textContent = totalItems;
+                        countElement.style.display = totalItems > 0 ? 'flex' : 'none';
+                    }
+                } catch (error) {
+                    console.error('Error updating cart counter:', error);
+                }
+            }
+        }
+    </script>
+</body>
+</html>

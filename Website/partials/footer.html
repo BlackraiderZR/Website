@@ -1,0 +1,39 @@
+    </main>
+    
+    <!-- Footer Container -->
+    <footer id="main-footer"></footer>
+    
+    <!-- JavaScript Files -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/testimonials.js"></script>
+    
+    <!-- Inline script untuk halaman spesifik -->
+    <script>
+        // Inisialisasi setelah DOM selesai dimuat
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hilangkan loading spinner
+            const spinner = document.getElementById('loading-spinner');
+            if (spinner) {
+                setTimeout(() => {
+                    spinner.style.opacity = '0';
+                    setTimeout(() => {
+                        spinner.style.display = 'none';
+                    }, 300);
+                }, 500);
+            }
+            
+            // Highlight nav aktif
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute('href');
+                if (linkPage === currentPage || 
+                    (currentPage === '' && linkPage === 'index.html')) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
